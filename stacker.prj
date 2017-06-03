@@ -1,0 +1,3 @@
+verilog work "score_main.v"
+verilog work "debounce - Copy.v"
+verilog work "stacker.v"

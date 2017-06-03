@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/Users/152/Desktop/lab4/score_display.xst" -ofn "C:/Users/152/Desktop/lab4/score_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 score_display.ngc score_display.ngd  
+xst -intstyle ise -ifn "C:/Users/152/Desktop/lab4/score_display.xst" -ofn "C:/Users/152/Desktop/lab4/score_display.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/lab4/score_display.xst" -ofn "C:/Users/152/Desktop/lab4/score_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 score_display.ngc score_display.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_display_map.ncd score_display.ngd score_display.pcf 
+par -w -intstyle ise -ol high -mt off score_display_map.ncd score_display.ncd score_display.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_display.twx score_display.ncd -o score_display.twr score_display.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f score_display.ut score_display.ncd 

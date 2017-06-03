@@ -1,0 +1,46 @@
+//! **************************************************************************
+// Written by: Map P.68d on Thu May 25 15:56:35 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "btnR" LOCATE = SITE "D9" LEVEL 1;
+COMP "btnS" LOCATE = SITE "B8" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "seg<7>" LOCATE = SITE "M13" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "segment_counter_0" BEL "segment_counter_1" BEL
+        "segment_counter_2" BEL "segment_counter_3" BEL "segment_counter_4"
+        BEL "segment_counter_5" BEL "segment_counter_6" BEL
+        "segment_counter_7" BEL "segment_counter_8" BEL "segment_counter_9"
+        BEL "segment_counter_10" BEL "segment_counter_11" BEL
+        "segment_counter_12" BEL "segment_counter_13" BEL "segment_counter_14"
+        BEL "increment_button/m_counter_0" BEL "increment_button/m_counter_1"
+        BEL "increment_button/m_counter_2" BEL "increment_button/m_counter_3"
+        BEL "reset_button/m_counter_0" BEL "reset_button/m_counter_1" BEL
+        "reset_button/m_counter_2" BEL "reset_button/m_counter_3" BEL
+        "score/button_counter_23" BEL "score/button_counter_22" BEL
+        "score/button_counter_21" BEL "score/button_counter_20" BEL
+        "score/button_counter_19" BEL "score/button_counter_18" BEL
+        "score/button_counter_17" BEL "score/button_counter_16" BEL
+        "score/button_counter_15" BEL "score/button_counter_14" BEL
+        "score/button_counter_13" BEL "score/button_counter_12" BEL
+        "score/button_counter_11" BEL "score/button_counter_10" BEL
+        "score/button_counter_9" BEL "score/button_counter_8" BEL
+        "score/button_counter_7" BEL "score/button_counter_6" BEL
+        "score/button_counter_5" BEL "score/button_counter_4" BEL
+        "score/button_counter_3" BEL "increment_button/temp_button" BEL
+        "reset_button/temp_button" BEL "segment_clock" BEL
+        "score/button_clock" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

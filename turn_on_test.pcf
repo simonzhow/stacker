@@ -1,0 +1,39 @@
+//! **************************************************************************
+// Written by: Map P.68d on Thu Jun 01 14:28:05 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "JB<6>" LOCATE = SITE "K3" LEVEL 1;
+COMP "JB<7>" LOCATE = SITE "K5" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "JA<0>" LOCATE = SITE "T12" LEVEL 1;
+COMP "JA<1>" LOCATE = SITE "V12" LEVEL 1;
+COMP "JA<2>" LOCATE = SITE "N10" LEVEL 1;
+COMP "JA<3>" LOCATE = SITE "P11" LEVEL 1;
+COMP "JB<0>" LOCATE = SITE "K2" LEVEL 1;
+COMP "JA<4>" LOCATE = SITE "M10" LEVEL 1;
+COMP "JB<1>" LOCATE = SITE "K1" LEVEL 1;
+COMP "JA<5>" LOCATE = SITE "N9" LEVEL 1;
+COMP "JB<2>" LOCATE = SITE "L4" LEVEL 1;
+COMP "JA<6>" LOCATE = SITE "U11" LEVEL 1;
+COMP "JB<3>" LOCATE = SITE "L3" LEVEL 1;
+COMP "JA<7>" LOCATE = SITE "V11" LEVEL 1;
+COMP "JB<4>" LOCATE = SITE "J3" LEVEL 1;
+COMP "JB<5>" LOCATE = SITE "J1" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "segment_output" BEL "segment_counter_0" BEL
+        "segment_counter_1" BEL "segment_counter_2" BEL "segment_counter_3"
+        BEL "segment_counter_4" BEL "segment_counter_5" BEL
+        "segment_counter_6" BEL "segment_counter_7" BEL "segment_counter_8"
+        BEL "segment_counter_9" BEL "segment_counter_10" BEL
+        "segment_counter_11" BEL "segment_counter_12" BEL "segment_counter_13"
+        BEL "segment_counter_14" BEL "segment_counter_15" BEL
+        "segment_counter_16" BEL "segment_counter_17" BEL "segment_counter_18"
+        BEL "segment_counter_19" BEL "segment_counter_20" BEL
+        "segment_counter_21" BEL "segment_counter_22" BEL "segment_counter_23"
+        BEL "segment_counter_24" BEL "segment_counter_25" BEL
+        "segment_counter_26" BEL "segment_counter_27" BEL "segment_counter_28"
+        BEL "segment_counter_29" BEL "segment_counter_30" BEL
+        "segment_counter_31" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

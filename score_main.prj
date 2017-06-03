@@ -1,0 +1,4 @@
+verilog work "score_display.v"
+verilog work "score_counter.v"
+verilog work "debounce - Copy.v"
+verilog work "score_main.v"

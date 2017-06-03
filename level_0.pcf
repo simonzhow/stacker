@@ -1,0 +1,202 @@
+//! **************************************************************************
+// Written by: Map P.68d on Fri Jun 02 16:06:20 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "btnR" LOCATE = SITE "D9" LEVEL 1;
+COMP "btnS" LOCATE = SITE "B8" LEVEL 1;
+COMP "JA<0>" LOCATE = SITE "T12" LEVEL 1;
+COMP "JA<1>" LOCATE = SITE "V12" LEVEL 1;
+COMP "JA<2>" LOCATE = SITE "N10" LEVEL 1;
+COMP "JA<3>" LOCATE = SITE "P11" LEVEL 1;
+COMP "JB<0>" LOCATE = SITE "K2" LEVEL 1;
+COMP "JA<4>" LOCATE = SITE "M10" LEVEL 1;
+COMP "JB<1>" LOCATE = SITE "K1" LEVEL 1;
+COMP "JA<5>" LOCATE = SITE "N9" LEVEL 1;
+COMP "JB<2>" LOCATE = SITE "L4" LEVEL 1;
+COMP "JA<6>" LOCATE = SITE "U11" LEVEL 1;
+COMP "JB<3>" LOCATE = SITE "L3" LEVEL 1;
+COMP "JA<7>" LOCATE = SITE "V11" LEVEL 1;
+COMP "JB<4>" LOCATE = SITE "J3" LEVEL 1;
+COMP "JB<5>" LOCATE = SITE "J1" LEVEL 1;
+COMP "JB<6>" LOCATE = SITE "K3" LEVEL 1;
+COMP "JB<7>" LOCATE = SITE "K5" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "seg<7>" LOCATE = SITE "M13" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "seg_0" BEL "seg_1" BEL "seg_2" BEL "seg_3" BEL
+        "seg_4" BEL "seg_5" BEL "seg_6" BEL "an_0" BEL "an_1" BEL
+        "ds_move_height_0" BEL "ds_move_height_1" BEL "ds_move_height_2" BEL
+        "ds_move_height_3" BEL "ds_move_height_4" BEL "ds_move_height_5" BEL
+        "ds_move_height_6" BEL "ds_move_height_7" BEL "ds_height_1" BEL
+        "ds_height_2" BEL "ds_height_3" BEL "ds_height_4" BEL "ds_height_5"
+        BEL "ds_height_6" BEL "ds_height_7" BEL "divide_clock/lvl_3_output"
+        BEL "divide_clock/blinking_output" BEL "divide_clock/led_output" BEL
+        "_i000001/segment_clock" BEL "divide_clock/lvl_2_counter_0" BEL
+        "divide_clock/debounce_counter_0" BEL "divide_clock/lvl_1_counter_0"
+        BEL "divide_clock/lvl_2_output" BEL "divide_clock/lvl_1_output" BEL
+        "divide_clock/debounce_output" BEL "divide_clock/lvl_3_counter_31" BEL
+        "divide_clock/lvl_3_counter_30" BEL "divide_clock/lvl_3_counter_29"
+        BEL "divide_clock/lvl_3_counter_28" BEL
+        "divide_clock/lvl_3_counter_27" BEL "divide_clock/lvl_3_counter_26"
+        BEL "divide_clock/lvl_3_counter_25" BEL
+        "divide_clock/lvl_3_counter_24" BEL "divide_clock/lvl_3_counter_23"
+        BEL "divide_clock/lvl_3_counter_22" BEL
+        "divide_clock/lvl_3_counter_21" BEL "divide_clock/lvl_3_counter_20"
+        BEL "divide_clock/lvl_3_counter_19" BEL
+        "divide_clock/lvl_3_counter_18" BEL "divide_clock/lvl_3_counter_17"
+        BEL "divide_clock/lvl_3_counter_16" BEL
+        "divide_clock/lvl_3_counter_15" BEL "divide_clock/lvl_3_counter_14"
+        BEL "divide_clock/lvl_3_counter_13" BEL
+        "divide_clock/lvl_3_counter_12" BEL "divide_clock/lvl_3_counter_11"
+        BEL "divide_clock/lvl_3_counter_10" BEL "divide_clock/lvl_3_counter_9"
+        BEL "divide_clock/lvl_3_counter_8" BEL "divide_clock/lvl_3_counter_7"
+        BEL "divide_clock/lvl_3_counter_6" BEL "divide_clock/lvl_3_counter_5"
+        BEL "divide_clock/lvl_3_counter_4" BEL "divide_clock/lvl_3_counter_3"
+        BEL "divide_clock/lvl_3_counter_2" BEL "divide_clock/lvl_3_counter_1"
+        BEL "divide_clock/lvl_3_counter_0" BEL
+        "divide_clock/blinking_counter_31" BEL
+        "divide_clock/blinking_counter_30" BEL
+        "divide_clock/blinking_counter_29" BEL
+        "divide_clock/blinking_counter_28" BEL
+        "divide_clock/blinking_counter_27" BEL
+        "divide_clock/blinking_counter_26" BEL
+        "divide_clock/blinking_counter_25" BEL
+        "divide_clock/blinking_counter_24" BEL
+        "divide_clock/blinking_counter_23" BEL
+        "divide_clock/blinking_counter_22" BEL
+        "divide_clock/blinking_counter_21" BEL
+        "divide_clock/blinking_counter_20" BEL
+        "divide_clock/blinking_counter_19" BEL
+        "divide_clock/blinking_counter_18" BEL
+        "divide_clock/blinking_counter_17" BEL
+        "divide_clock/blinking_counter_16" BEL
+        "divide_clock/blinking_counter_15" BEL
+        "divide_clock/blinking_counter_14" BEL
+        "divide_clock/blinking_counter_13" BEL
+        "divide_clock/blinking_counter_12" BEL
+        "divide_clock/blinking_counter_11" BEL
+        "divide_clock/blinking_counter_10" BEL
+        "divide_clock/blinking_counter_9" BEL
+        "divide_clock/blinking_counter_8" BEL
+        "divide_clock/blinking_counter_7" BEL
+        "divide_clock/blinking_counter_6" BEL
+        "divide_clock/blinking_counter_5" BEL
+        "divide_clock/blinking_counter_4" BEL
+        "divide_clock/blinking_counter_3" BEL
+        "divide_clock/blinking_counter_2" BEL
+        "divide_clock/blinking_counter_1" BEL
+        "divide_clock/blinking_counter_0" BEL "divide_clock/led_counter_31"
+        BEL "divide_clock/led_counter_30" BEL "divide_clock/led_counter_29"
+        BEL "divide_clock/led_counter_28" BEL "divide_clock/led_counter_27"
+        BEL "divide_clock/led_counter_26" BEL "divide_clock/led_counter_25"
+        BEL "divide_clock/led_counter_24" BEL "divide_clock/led_counter_23"
+        BEL "divide_clock/led_counter_22" BEL "divide_clock/led_counter_21"
+        BEL "divide_clock/led_counter_20" BEL "divide_clock/led_counter_19"
+        BEL "divide_clock/led_counter_18" BEL "divide_clock/led_counter_17"
+        BEL "divide_clock/led_counter_16" BEL "divide_clock/led_counter_15"
+        BEL "divide_clock/led_counter_14" BEL "divide_clock/led_counter_13"
+        BEL "divide_clock/led_counter_12" BEL "divide_clock/led_counter_11"
+        BEL "divide_clock/led_counter_10" BEL "divide_clock/led_counter_9" BEL
+        "divide_clock/led_counter_8" BEL "divide_clock/led_counter_7" BEL
+        "divide_clock/led_counter_6" BEL "divide_clock/led_counter_5" BEL
+        "divide_clock/led_counter_4" BEL "divide_clock/led_counter_3" BEL
+        "divide_clock/led_counter_2" BEL "divide_clock/led_counter_1" BEL
+        "divide_clock/led_counter_0" BEL "_i000001/segment_counter_31" BEL
+        "_i000001/segment_counter_30" BEL "_i000001/segment_counter_29" BEL
+        "_i000001/segment_counter_28" BEL "_i000001/segment_counter_27" BEL
+        "_i000001/segment_counter_26" BEL "_i000001/segment_counter_25" BEL
+        "_i000001/segment_counter_24" BEL "_i000001/segment_counter_23" BEL
+        "_i000001/segment_counter_22" BEL "_i000001/segment_counter_21" BEL
+        "_i000001/segment_counter_20" BEL "_i000001/segment_counter_19" BEL
+        "_i000001/segment_counter_18" BEL "_i000001/segment_counter_17" BEL
+        "_i000001/segment_counter_16" BEL "_i000001/segment_counter_15" BEL
+        "_i000001/segment_counter_14" BEL "_i000001/segment_counter_13" BEL
+        "_i000001/segment_counter_12" BEL "_i000001/segment_counter_11" BEL
+        "_i000001/segment_counter_10" BEL "_i000001/segment_counter_9" BEL
+        "_i000001/segment_counter_8" BEL "_i000001/segment_counter_7" BEL
+        "_i000001/segment_counter_6" BEL "_i000001/segment_counter_5" BEL
+        "_i000001/segment_counter_4" BEL "_i000001/segment_counter_3" BEL
+        "_i000001/segment_counter_2" BEL "_i000001/segment_counter_1" BEL
+        "_i000001/segment_counter_0" BEL "divide_clock/lvl_2_counter_31" BEL
+        "divide_clock/lvl_2_counter_30" BEL "divide_clock/lvl_2_counter_29"
+        BEL "divide_clock/lvl_2_counter_28" BEL
+        "divide_clock/lvl_2_counter_27" BEL "divide_clock/lvl_2_counter_26"
+        BEL "divide_clock/lvl_2_counter_25" BEL
+        "divide_clock/lvl_2_counter_24" BEL "divide_clock/lvl_2_counter_23"
+        BEL "divide_clock/lvl_2_counter_22" BEL
+        "divide_clock/lvl_2_counter_21" BEL "divide_clock/lvl_2_counter_20"
+        BEL "divide_clock/lvl_2_counter_19" BEL
+        "divide_clock/lvl_2_counter_18" BEL "divide_clock/lvl_2_counter_17"
+        BEL "divide_clock/lvl_2_counter_16" BEL
+        "divide_clock/lvl_2_counter_15" BEL "divide_clock/lvl_2_counter_14"
+        BEL "divide_clock/lvl_2_counter_13" BEL
+        "divide_clock/lvl_2_counter_12" BEL "divide_clock/lvl_2_counter_11"
+        BEL "divide_clock/lvl_2_counter_10" BEL "divide_clock/lvl_2_counter_9"
+        BEL "divide_clock/lvl_2_counter_8" BEL "divide_clock/lvl_2_counter_7"
+        BEL "divide_clock/lvl_2_counter_6" BEL "divide_clock/lvl_2_counter_5"
+        BEL "divide_clock/lvl_2_counter_4" BEL "divide_clock/lvl_2_counter_3"
+        BEL "divide_clock/lvl_2_counter_2" BEL "divide_clock/lvl_2_counter_1"
+        BEL "divide_clock/debounce_counter_31" BEL
+        "divide_clock/debounce_counter_30" BEL
+        "divide_clock/debounce_counter_29" BEL
+        "divide_clock/debounce_counter_28" BEL
+        "divide_clock/debounce_counter_27" BEL
+        "divide_clock/debounce_counter_26" BEL
+        "divide_clock/debounce_counter_25" BEL
+        "divide_clock/debounce_counter_24" BEL
+        "divide_clock/debounce_counter_23" BEL
+        "divide_clock/debounce_counter_22" BEL
+        "divide_clock/debounce_counter_21" BEL
+        "divide_clock/debounce_counter_20" BEL
+        "divide_clock/debounce_counter_19" BEL
+        "divide_clock/debounce_counter_18" BEL
+        "divide_clock/debounce_counter_17" BEL
+        "divide_clock/debounce_counter_16" BEL
+        "divide_clock/debounce_counter_15" BEL
+        "divide_clock/debounce_counter_14" BEL
+        "divide_clock/debounce_counter_13" BEL
+        "divide_clock/debounce_counter_12" BEL
+        "divide_clock/debounce_counter_11" BEL
+        "divide_clock/debounce_counter_10" BEL
+        "divide_clock/debounce_counter_9" BEL
+        "divide_clock/debounce_counter_8" BEL
+        "divide_clock/debounce_counter_7" BEL
+        "divide_clock/debounce_counter_6" BEL
+        "divide_clock/debounce_counter_5" BEL
+        "divide_clock/debounce_counter_4" BEL
+        "divide_clock/debounce_counter_3" BEL
+        "divide_clock/debounce_counter_2" BEL
+        "divide_clock/debounce_counter_1" BEL "divide_clock/lvl_1_counter_31"
+        BEL "divide_clock/lvl_1_counter_30" BEL
+        "divide_clock/lvl_1_counter_29" BEL "divide_clock/lvl_1_counter_28"
+        BEL "divide_clock/lvl_1_counter_27" BEL
+        "divide_clock/lvl_1_counter_26" BEL "divide_clock/lvl_1_counter_25"
+        BEL "divide_clock/lvl_1_counter_24" BEL
+        "divide_clock/lvl_1_counter_23" BEL "divide_clock/lvl_1_counter_22"
+        BEL "divide_clock/lvl_1_counter_21" BEL
+        "divide_clock/lvl_1_counter_20" BEL "divide_clock/lvl_1_counter_19"
+        BEL "divide_clock/lvl_1_counter_18" BEL
+        "divide_clock/lvl_1_counter_17" BEL "divide_clock/lvl_1_counter_16"
+        BEL "divide_clock/lvl_1_counter_15" BEL
+        "divide_clock/lvl_1_counter_14" BEL "divide_clock/lvl_1_counter_13"
+        BEL "divide_clock/lvl_1_counter_12" BEL
+        "divide_clock/lvl_1_counter_11" BEL "divide_clock/lvl_1_counter_10"
+        BEL "divide_clock/lvl_1_counter_9" BEL "divide_clock/lvl_1_counter_8"
+        BEL "divide_clock/lvl_1_counter_7" BEL "divide_clock/lvl_1_counter_6"
+        BEL "divide_clock/lvl_1_counter_5" BEL "divide_clock/lvl_1_counter_4"
+        BEL "divide_clock/lvl_1_counter_3" BEL "divide_clock/lvl_1_counter_2"
+        BEL "divide_clock/lvl_1_counter_1" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

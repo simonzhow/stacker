@@ -1,0 +1,116 @@
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "score_main.ngc" score_main.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_main_map.ncd score_main.ngd score_main.pcf 
+par -w -intstyle ise -ol high -mt off score_main_map.ncd score_main.ncd score_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_main.twx score_main.ncd -o score_main.twr score_main.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 "score_main.ngc" score_main.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_main_map.ncd score_main.ngd score_main.pcf 
+par -w -intstyle ise -ol high -mt off score_main_map.ncd score_main.ncd score_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_main.twx score_main.ncd -o score_main.twr score_main.pcf 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "score_main.ngc" score_main.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_main_map.ncd score_main.ngd score_main.pcf 
+par -w -intstyle ise -ol high -mt off score_main_map.ncd score_main.ncd score_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_main.twx score_main.ncd -o score_main.twr score_main.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "score_main.ngc" score_main.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_main_map.ncd score_main.ngd score_main.pcf 
+par -w -intstyle ise -ol high -mt off score_main_map.ncd score_main.ncd score_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_main.twx score_main.ncd -o score_main.twr score_main.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "score_main.ngc" score_main.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_main_map.ncd score_main.ngd score_main.pcf 
+par -w -intstyle ise -ol high -mt off score_main_map.ncd score_main.ncd score_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_main.twx score_main.ncd -o score_main.twr score_main.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "score_main.ngc" score_main.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_main_map.ncd score_main.ngd score_main.pcf 
+par -w -intstyle ise -ol high -mt off score_main_map.ncd score_main.ncd score_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_main.twx score_main.ncd -o score_main.twr score_main.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "score_main.ngc" score_main.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_main_map.ncd score_main.ngd score_main.pcf 
+par -w -intstyle ise -ol high -mt off score_main_map.ncd score_main.ncd score_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_main.twx score_main.ncd -o score_main.twr score_main.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "score_main.ngc" score_main.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_main_map.ncd score_main.ngd score_main.pcf 
+par -w -intstyle ise -ol high -mt off score_main_map.ncd score_main.ncd score_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_main.twx score_main.ncd -o score_main.twr score_main.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "score_main.ngc" score_main.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_main_map.ncd score_main.ngd score_main.pcf 
+par -w -intstyle ise -ol high -mt off score_main_map.ncd score_main.ncd score_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_main.twx score_main.ncd -o score_main.twr score_main.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "score_main.ngc" score_main.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_main_map.ncd score_main.ngd score_main.pcf 
+par -w -intstyle ise -ol high -mt off score_main_map.ncd score_main.ncd score_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_main.twx score_main.ncd -o score_main.twr score_main.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "score_main.ngc" score_main.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_main_map.ncd score_main.ngd score_main.pcf 
+par -w -intstyle ise -ol high -mt off score_main_map.ncd score_main.ncd score_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_main.twx score_main.ncd -o score_main.twr score_main.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "score_main.ngc" score_main.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_main_map.ncd score_main.ngd score_main.pcf 
+par -w -intstyle ise -ol high -mt off score_main_map.ncd score_main.ncd score_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_main.twx score_main.ncd -o score_main.twr score_main.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "score_main.ngc" score_main.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_main_map.ncd score_main.ngd score_main.pcf 
+par -w -intstyle ise -ol high -mt off score_main_map.ncd score_main.ncd score_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_main.twx score_main.ncd -o score_main.twr score_main.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "score_main.ngc" score_main.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_main_map.ncd score_main.ngd score_main.pcf 
+par -w -intstyle ise -ol high -mt off score_main_map.ncd score_main.ncd score_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_main.twx score_main.ncd -o score_main.twr score_main.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "score_main.ngc" score_main.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_main_map.ncd score_main.ngd score_main.pcf 
+par -w -intstyle ise -ol high -mt off score_main_map.ncd score_main.ncd score_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_main.twx score_main.ncd -o score_main.twr score_main.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/score_main.xst" -ofn "E:/CS M152A/lab4/score_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "score_main.ngc" score_main.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o score_main_map.ncd score_main.ngd score_main.pcf 
+par -w -intstyle ise -ol high -mt off score_main_map.ncd score_main.ncd score_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml score_main.twx score_main.ncd -o score_main.twr score_main.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f score_main.ut score_main.ncd 

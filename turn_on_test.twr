@@ -1,0 +1,707 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr
+turn_on_test.pcf -ucf nexys3-test.ucf
+
+Design file:              turn_on_test.ncd
+Physical constraint file: turn_on_test.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-06-08)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1586 paths analyzed, 67 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.833ns.
+--------------------------------------------------------------------------------
+
+Paths for end point segment_counter_31 (SLICE_X15Y25.B4), 32 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.167ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               segment_counter_11 (FF)
+  Destination:          segment_counter_31 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.781ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.017ns (0.241 - 0.258)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: segment_counter_11 to segment_counter_31
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y21.AQ      Tcko                  0.391   segment_counter<14>
+                                                       segment_counter_11
+    SLICE_X15Y20.D2      net (fanout=2)        0.760   segment_counter<11>
+    SLICE_X15Y20.D       Tilo                  0.259   segment_output
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>3
+    SLICE_X17Y21.C2      net (fanout=3)        0.785   segment_counter[31]_GND_1_o_equal_2_o<31>2
+    SLICE_X17Y21.C       Tilo                  0.259   segment_counter<17>
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>7_1
+    SLICE_X15Y25.B4      net (fanout=15)       1.005   segment_counter[31]_GND_1_o_equal_2_o<31>7
+    SLICE_X15Y25.CLK     Tas                   0.322   segment_counter<31>
+                                                       segment_counter_31_rstpot
+                                                       segment_counter_31
+    -------------------------------------------------  ---------------------------
+    Total                                      3.781ns (1.231ns logic, 2.550ns route)
+                                                       (32.6% logic, 67.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.225ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               segment_counter_12 (FF)
+  Destination:          segment_counter_31 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.723ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.017ns (0.241 - 0.258)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: segment_counter_12 to segment_counter_31
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y21.BQ      Tcko                  0.391   segment_counter<14>
+                                                       segment_counter_12
+    SLICE_X16Y21.A1      net (fanout=2)        0.964   segment_counter<12>
+    SLICE_X16Y21.A       Tilo                  0.205   segment_counter[31]_GND_1_o_equal_2_o<31>
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>1
+    SLICE_X17Y21.C4      net (fanout=3)        0.577   segment_counter[31]_GND_1_o_equal_2_o<31>
+    SLICE_X17Y21.C       Tilo                  0.259   segment_counter<17>
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>7_1
+    SLICE_X15Y25.B4      net (fanout=15)       1.005   segment_counter[31]_GND_1_o_equal_2_o<31>7
+    SLICE_X15Y25.CLK     Tas                   0.322   segment_counter<31>
+                                                       segment_counter_31_rstpot
+                                                       segment_counter_31
+    -------------------------------------------------  ---------------------------
+    Total                                      3.723ns (1.177ns logic, 2.546ns route)
+                                                       (31.6% logic, 68.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.298ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               segment_counter_13 (FF)
+  Destination:          segment_counter_31 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.650ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.017ns (0.241 - 0.258)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: segment_counter_13 to segment_counter_31
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y21.CQ      Tcko                  0.391   segment_counter<14>
+                                                       segment_counter_13
+    SLICE_X15Y20.D1      net (fanout=2)        0.629   segment_counter<13>
+    SLICE_X15Y20.D       Tilo                  0.259   segment_output
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>3
+    SLICE_X17Y21.C2      net (fanout=3)        0.785   segment_counter[31]_GND_1_o_equal_2_o<31>2
+    SLICE_X17Y21.C       Tilo                  0.259   segment_counter<17>
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>7_1
+    SLICE_X15Y25.B4      net (fanout=15)       1.005   segment_counter[31]_GND_1_o_equal_2_o<31>7
+    SLICE_X15Y25.CLK     Tas                   0.322   segment_counter<31>
+                                                       segment_counter_31_rstpot
+                                                       segment_counter_31
+    -------------------------------------------------  ---------------------------
+    Total                                      3.650ns (1.231ns logic, 2.419ns route)
+                                                       (33.7% logic, 66.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point segment_counter_24 (SLICE_X19Y23.C1), 25 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.181ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               segment_counter_1 (FF)
+  Destination:          segment_counter_24 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.756ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.028ns (0.322 - 0.350)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: segment_counter_1 to segment_counter_24
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y20.CQ      Tcko                  0.408   segment_counter<2>
+                                                       segment_counter_1
+    SLICE_X14Y18.B1      net (fanout=2)        0.842   segment_counter<1>
+    SLICE_X14Y18.COUT    Topcyb                0.380   Mcount_segment_counter_cy<3>
+                                                       segment_counter<1>_rt
+                                                       Mcount_segment_counter_cy<3>
+    SLICE_X14Y19.CIN     net (fanout=1)        0.003   Mcount_segment_counter_cy<3>
+    SLICE_X14Y19.COUT    Tbyp                  0.076   Mcount_segment_counter_cy<7>
+                                                       Mcount_segment_counter_cy<7>
+    SLICE_X14Y20.CIN     net (fanout=1)        0.003   Mcount_segment_counter_cy<7>
+    SLICE_X14Y20.COUT    Tbyp                  0.076   Mcount_segment_counter_cy<11>
+                                                       Mcount_segment_counter_cy<11>
+    SLICE_X14Y21.CIN     net (fanout=1)        0.003   Mcount_segment_counter_cy<11>
+    SLICE_X14Y21.COUT    Tbyp                  0.076   Mcount_segment_counter_cy<15>
+                                                       Mcount_segment_counter_cy<15>
+    SLICE_X14Y22.CIN     net (fanout=1)        0.003   Mcount_segment_counter_cy<15>
+    SLICE_X14Y22.COUT    Tbyp                  0.076   Mcount_segment_counter_cy<19>
+                                                       Mcount_segment_counter_cy<19>
+    SLICE_X14Y23.CIN     net (fanout=1)        0.003   Mcount_segment_counter_cy<19>
+    SLICE_X14Y23.COUT    Tbyp                  0.076   Mcount_segment_counter_cy<23>
+                                                       Mcount_segment_counter_cy<23>
+    SLICE_X14Y24.CIN     net (fanout=1)        0.082   Mcount_segment_counter_cy<23>
+    SLICE_X14Y24.AMUX    Tcina                 0.202   Mcount_segment_counter_cy<27>
+                                                       Mcount_segment_counter_cy<27>
+    SLICE_X19Y23.C1      net (fanout=1)        1.125   Result<24>
+    SLICE_X19Y23.CLK     Tas                   0.322   segment_counter<25>
+                                                       segment_counter_24_rstpot
+                                                       segment_counter_24
+    -------------------------------------------------  ---------------------------
+    Total                                      3.756ns (1.692ns logic, 2.064ns route)
+                                                       (45.0% logic, 55.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.425ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               segment_counter_0 (FF)
+  Destination:          segment_counter_24 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.512ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.028ns (0.322 - 0.350)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: segment_counter_0 to segment_counter_24
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y20.AQ      Tcko                  0.408   segment_counter<2>
+                                                       segment_counter_0
+    SLICE_X14Y18.A5      net (fanout=2)        0.599   segment_counter<0>
+    SLICE_X14Y18.COUT    Topcya                0.379   Mcount_segment_counter_cy<3>
+                                                       Mcount_segment_counter_lut<0>_INV_0
+                                                       Mcount_segment_counter_cy<3>
+    SLICE_X14Y19.CIN     net (fanout=1)        0.003   Mcount_segment_counter_cy<3>
+    SLICE_X14Y19.COUT    Tbyp                  0.076   Mcount_segment_counter_cy<7>
+                                                       Mcount_segment_counter_cy<7>
+    SLICE_X14Y20.CIN     net (fanout=1)        0.003   Mcount_segment_counter_cy<7>
+    SLICE_X14Y20.COUT    Tbyp                  0.076   Mcount_segment_counter_cy<11>
+                                                       Mcount_segment_counter_cy<11>
+    SLICE_X14Y21.CIN     net (fanout=1)        0.003   Mcount_segment_counter_cy<11>
+    SLICE_X14Y21.COUT    Tbyp                  0.076   Mcount_segment_counter_cy<15>
+                                                       Mcount_segment_counter_cy<15>
+    SLICE_X14Y22.CIN     net (fanout=1)        0.003   Mcount_segment_counter_cy<15>
+    SLICE_X14Y22.COUT    Tbyp                  0.076   Mcount_segment_counter_cy<19>
+                                                       Mcount_segment_counter_cy<19>
+    SLICE_X14Y23.CIN     net (fanout=1)        0.003   Mcount_segment_counter_cy<19>
+    SLICE_X14Y23.COUT    Tbyp                  0.076   Mcount_segment_counter_cy<23>
+                                                       Mcount_segment_counter_cy<23>
+    SLICE_X14Y24.CIN     net (fanout=1)        0.082   Mcount_segment_counter_cy<23>
+    SLICE_X14Y24.AMUX    Tcina                 0.202   Mcount_segment_counter_cy<27>
+                                                       Mcount_segment_counter_cy<27>
+    SLICE_X19Y23.C1      net (fanout=1)        1.125   Result<24>
+    SLICE_X19Y23.CLK     Tas                   0.322   segment_counter<25>
+                                                       segment_counter_24_rstpot
+                                                       segment_counter_24
+    -------------------------------------------------  ---------------------------
+    Total                                      3.512ns (1.691ns logic, 1.821ns route)
+                                                       (48.1% logic, 51.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.443ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               segment_counter_2 (FF)
+  Destination:          segment_counter_24 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.494ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.028ns (0.322 - 0.350)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: segment_counter_2 to segment_counter_24
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y20.DQ      Tcko                  0.408   segment_counter<2>
+                                                       segment_counter_2
+    SLICE_X14Y18.C3      net (fanout=2)        0.683   segment_counter<2>
+    SLICE_X14Y18.COUT    Topcyc                0.277   Mcount_segment_counter_cy<3>
+                                                       segment_counter<2>_rt
+                                                       Mcount_segment_counter_cy<3>
+    SLICE_X14Y19.CIN     net (fanout=1)        0.003   Mcount_segment_counter_cy<3>
+    SLICE_X14Y19.COUT    Tbyp                  0.076   Mcount_segment_counter_cy<7>
+                                                       Mcount_segment_counter_cy<7>
+    SLICE_X14Y20.CIN     net (fanout=1)        0.003   Mcount_segment_counter_cy<7>
+    SLICE_X14Y20.COUT    Tbyp                  0.076   Mcount_segment_counter_cy<11>
+                                                       Mcount_segment_counter_cy<11>
+    SLICE_X14Y21.CIN     net (fanout=1)        0.003   Mcount_segment_counter_cy<11>
+    SLICE_X14Y21.COUT    Tbyp                  0.076   Mcount_segment_counter_cy<15>
+                                                       Mcount_segment_counter_cy<15>
+    SLICE_X14Y22.CIN     net (fanout=1)        0.003   Mcount_segment_counter_cy<15>
+    SLICE_X14Y22.COUT    Tbyp                  0.076   Mcount_segment_counter_cy<19>
+                                                       Mcount_segment_counter_cy<19>
+    SLICE_X14Y23.CIN     net (fanout=1)        0.003   Mcount_segment_counter_cy<19>
+    SLICE_X14Y23.COUT    Tbyp                  0.076   Mcount_segment_counter_cy<23>
+                                                       Mcount_segment_counter_cy<23>
+    SLICE_X14Y24.CIN     net (fanout=1)        0.082   Mcount_segment_counter_cy<23>
+    SLICE_X14Y24.AMUX    Tcina                 0.202   Mcount_segment_counter_cy<27>
+                                                       Mcount_segment_counter_cy<27>
+    SLICE_X19Y23.C1      net (fanout=1)        1.125   Result<24>
+    SLICE_X19Y23.CLK     Tas                   0.322   segment_counter<25>
+                                                       segment_counter_24_rstpot
+                                                       segment_counter_24
+    -------------------------------------------------  ---------------------------
+    Total                                      3.494ns (1.589ns logic, 1.905ns route)
+                                                       (45.5% logic, 54.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point segment_counter_23 (SLICE_X19Y23.B4), 32 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.195ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               segment_counter_11 (FF)
+  Destination:          segment_counter_23 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.739ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.031ns (0.322 - 0.353)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: segment_counter_11 to segment_counter_23
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y21.AQ      Tcko                  0.391   segment_counter<14>
+                                                       segment_counter_11
+    SLICE_X15Y20.D2      net (fanout=2)        0.760   segment_counter<11>
+    SLICE_X15Y20.D       Tilo                  0.259   segment_output
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>3
+    SLICE_X17Y21.C2      net (fanout=3)        0.785   segment_counter[31]_GND_1_o_equal_2_o<31>2
+    SLICE_X17Y21.C       Tilo                  0.259   segment_counter<17>
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>7_1
+    SLICE_X19Y23.B4      net (fanout=15)       0.963   segment_counter[31]_GND_1_o_equal_2_o<31>7
+    SLICE_X19Y23.CLK     Tas                   0.322   segment_counter<25>
+                                                       segment_counter_23_rstpot
+                                                       segment_counter_23
+    -------------------------------------------------  ---------------------------
+    Total                                      3.739ns (1.231ns logic, 2.508ns route)
+                                                       (32.9% logic, 67.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.253ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               segment_counter_12 (FF)
+  Destination:          segment_counter_23 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.681ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.031ns (0.322 - 0.353)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: segment_counter_12 to segment_counter_23
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y21.BQ      Tcko                  0.391   segment_counter<14>
+                                                       segment_counter_12
+    SLICE_X16Y21.A1      net (fanout=2)        0.964   segment_counter<12>
+    SLICE_X16Y21.A       Tilo                  0.205   segment_counter[31]_GND_1_o_equal_2_o<31>
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>1
+    SLICE_X17Y21.C4      net (fanout=3)        0.577   segment_counter[31]_GND_1_o_equal_2_o<31>
+    SLICE_X17Y21.C       Tilo                  0.259   segment_counter<17>
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>7_1
+    SLICE_X19Y23.B4      net (fanout=15)       0.963   segment_counter[31]_GND_1_o_equal_2_o<31>7
+    SLICE_X19Y23.CLK     Tas                   0.322   segment_counter<25>
+                                                       segment_counter_23_rstpot
+                                                       segment_counter_23
+    -------------------------------------------------  ---------------------------
+    Total                                      3.681ns (1.177ns logic, 2.504ns route)
+                                                       (32.0% logic, 68.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.316ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               segment_counter_31 (FF)
+  Destination:          segment_counter_23 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.621ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.028ns (0.322 - 0.350)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: segment_counter_31 to segment_counter_23
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y25.BQ      Tcko                  0.391   segment_counter<31>
+                                                       segment_counter_31
+    SLICE_X15Y25.C1      net (fanout=2)        0.586   segment_counter<31>
+    SLICE_X15Y25.C       Tilo                  0.259   segment_counter<31>
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>6
+    SLICE_X17Y21.C1      net (fanout=3)        0.841   segment_counter[31]_GND_1_o_equal_2_o<31>5
+    SLICE_X17Y21.C       Tilo                  0.259   segment_counter<17>
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>7_1
+    SLICE_X19Y23.B4      net (fanout=15)       0.963   segment_counter[31]_GND_1_o_equal_2_o<31>7
+    SLICE_X19Y23.CLK     Tas                   0.322   segment_counter<25>
+                                                       segment_counter_23_rstpot
+                                                       segment_counter_23
+    -------------------------------------------------  ---------------------------
+    Total                                      3.621ns (1.231ns logic, 2.390ns route)
+                                                       (34.0% logic, 66.0% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point segment_output (SLICE_X15Y20.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.440ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               segment_output (FF)
+  Destination:          segment_output (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.440ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: segment_output to segment_output
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y20.AQ      Tcko                  0.198   segment_output
+                                                       segment_output
+    SLICE_X15Y20.A6      net (fanout=5)        0.027   segment_output
+    SLICE_X15Y20.CLK     Tah         (-Th)    -0.215   segment_output
+                                                       segment_output_rstpot
+                                                       segment_output
+    -------------------------------------------------  ---------------------------
+    Total                                      0.440ns (0.413ns logic, 0.027ns route)
+                                                       (93.9% logic, 6.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point segment_output (SLICE_X15Y20.A5), 27 paths
+--------------------------------------------------------------------------------
+Slack (hold path):      0.901ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               segment_output (FF)
+  Destination:          segment_output (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.901ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: segment_output to segment_output
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y20.AQ      Tcko                  0.198   segment_output
+                                                       segment_output
+    SLICE_X15Y20.B1      net (fanout=5)        0.267   segment_output
+    SLICE_X15Y20.B       Tilo                  0.156   segment_output
+                                                       segment_output_dpot
+    SLICE_X15Y20.A5      net (fanout=1)        0.065   segment_output_dpot
+    SLICE_X15Y20.CLK     Tah         (-Th)    -0.215   segment_output
+                                                       segment_output_rstpot
+                                                       segment_output
+    -------------------------------------------------  ---------------------------
+    Total                                      0.901ns (0.569ns logic, 0.332ns route)
+                                                       (63.2% logic, 36.8% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      1.019ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               segment_counter_2 (FF)
+  Destination:          segment_output (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.028ns (Levels of Logic = 3)
+  Clock Path Skew:      0.009ns (0.080 - 0.071)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: segment_counter_2 to segment_output
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y20.DQ      Tcko                  0.200   segment_counter<2>
+                                                       segment_counter_2
+    SLICE_X15Y20.C6      net (fanout=2)        0.132   segment_counter<2>
+    SLICE_X15Y20.C       Tilo                  0.156   segment_output
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>2
+    SLICE_X15Y20.B4      net (fanout=3)        0.104   segment_counter[31]_GND_1_o_equal_2_o<31>1
+    SLICE_X15Y20.B       Tilo                  0.156   segment_output
+                                                       segment_output_dpot
+    SLICE_X15Y20.A5      net (fanout=1)        0.065   segment_output_dpot
+    SLICE_X15Y20.CLK     Tah         (-Th)    -0.215   segment_output
+                                                       segment_output_rstpot
+                                                       segment_output
+    -------------------------------------------------  ---------------------------
+    Total                                      1.028ns (0.727ns logic, 0.301ns route)
+                                                       (70.7% logic, 29.3% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      1.053ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               segment_counter_1 (FF)
+  Destination:          segment_output (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.062ns (Levels of Logic = 3)
+  Clock Path Skew:      0.009ns (0.080 - 0.071)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: segment_counter_1 to segment_output
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y20.CQ      Tcko                  0.200   segment_counter<2>
+                                                       segment_counter_1
+    SLICE_X15Y20.C5      net (fanout=2)        0.166   segment_counter<1>
+    SLICE_X15Y20.C       Tilo                  0.156   segment_output
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>2
+    SLICE_X15Y20.B4      net (fanout=3)        0.104   segment_counter[31]_GND_1_o_equal_2_o<31>1
+    SLICE_X15Y20.B       Tilo                  0.156   segment_output
+                                                       segment_output_dpot
+    SLICE_X15Y20.A5      net (fanout=1)        0.065   segment_output_dpot
+    SLICE_X15Y20.CLK     Tah         (-Th)    -0.215   segment_output
+                                                       segment_output_rstpot
+                                                       segment_output
+    -------------------------------------------------  ---------------------------
+    Total                                      1.062ns (0.727ns logic, 0.335ns route)
+                                                       (68.5% logic, 31.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point segment_output (SLICE_X15Y20.A4), 6 paths
+--------------------------------------------------------------------------------
+Slack (hold path):      0.912ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               segment_counter_16 (FF)
+  Destination:          segment_output (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.923ns (Levels of Logic = 2)
+  Clock Path Skew:      0.011ns (0.080 - 0.069)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: segment_counter_16 to segment_output
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y21.BQ      Tcko                  0.198   segment_counter<17>
+                                                       segment_counter_16
+    SLICE_X16Y21.A5      net (fanout=2)        0.056   segment_counter<16>
+    SLICE_X16Y21.A       Tilo                  0.142   segment_counter[31]_GND_1_o_equal_2_o<31>
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>1
+    SLICE_X15Y20.A4      net (fanout=3)        0.312   segment_counter[31]_GND_1_o_equal_2_o<31>
+    SLICE_X15Y20.CLK     Tah         (-Th)    -0.215   segment_output
+                                                       segment_output_rstpot
+                                                       segment_output
+    -------------------------------------------------  ---------------------------
+    Total                                      0.923ns (0.555ns logic, 0.368ns route)
+                                                       (60.1% logic, 39.9% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      0.992ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               segment_counter_14 (FF)
+  Destination:          segment_output (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.996ns (Levels of Logic = 2)
+  Clock Path Skew:      0.004ns (0.038 - 0.034)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: segment_counter_14 to segment_output
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y21.DQ      Tcko                  0.198   segment_counter<14>
+                                                       segment_counter_14
+    SLICE_X16Y21.A6      net (fanout=2)        0.129   segment_counter<14>
+    SLICE_X16Y21.A       Tilo                  0.142   segment_counter[31]_GND_1_o_equal_2_o<31>
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>1
+    SLICE_X15Y20.A4      net (fanout=3)        0.312   segment_counter[31]_GND_1_o_equal_2_o<31>
+    SLICE_X15Y20.CLK     Tah         (-Th)    -0.215   segment_output
+                                                       segment_output_rstpot
+                                                       segment_output
+    -------------------------------------------------  ---------------------------
+    Total                                      0.996ns (0.555ns logic, 0.441ns route)
+                                                       (55.7% logic, 44.3% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      1.011ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               segment_counter_17 (FF)
+  Destination:          segment_output (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.022ns (Levels of Logic = 2)
+  Clock Path Skew:      0.011ns (0.080 - 0.069)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: segment_counter_17 to segment_output
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y21.DQ      Tcko                  0.198   segment_counter<17>
+                                                       segment_counter_17
+    SLICE_X16Y21.A3      net (fanout=2)        0.155   segment_counter<17>
+    SLICE_X16Y21.A       Tilo                  0.142   segment_counter[31]_GND_1_o_equal_2_o<31>
+                                                       segment_counter[31]_GND_1_o_equal_2_o<31>1
+    SLICE_X15Y20.A4      net (fanout=3)        0.312   segment_counter[31]_GND_1_o_equal_2_o<31>
+    SLICE_X15Y20.CLK     Tah         (-Th)    -0.215   segment_output
+                                                       segment_output_rstpot
+                                                       segment_output
+    -------------------------------------------------  ---------------------------
+    Total                                      1.022ns (0.555ns logic, 0.467ns route)
+                                                       (54.3% logic, 45.7% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 8.270ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
+  Physical resource: clk_BUFGP/BUFG/I0
+  Logical resource: clk_BUFGP/BUFG/I0
+  Location pin: BUFGMUX_X3Y13.I0
+  Clock network: clk_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 9.570ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 0.430ns (2325.581MHz) (Tcp)
+  Physical resource: segment_counter<2>/CLK
+  Logical resource: segment_counter_0/CK
+  Location pin: SLICE_X16Y20.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 9.570ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 0.430ns (2325.581MHz) (Tcp)
+  Physical resource: segment_counter<2>/CLK
+  Logical resource: segment_counter_1/CK
+  Location pin: SLICE_X16Y20.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.833|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 1586 paths, 0 nets, and 167 connections
+
+Design statistics:
+   Minimum period:   3.833ns{1}   (Maximum frequency: 260.892MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Thu Jun 01 14:28:23 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 219 MB
+
+
+

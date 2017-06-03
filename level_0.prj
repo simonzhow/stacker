@@ -1,0 +1,5 @@
+verilog work "score_main.v"
+verilog work "debounce - Copy.v"
+verilog work "clock_selector - Copy.v"
+verilog work "clock_divider.v"
+verilog work "level_0.v"

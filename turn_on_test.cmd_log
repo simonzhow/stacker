@@ -1,0 +1,137 @@
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/turn_on_test.xst" -ofn "E:/CS M152A/lab4/turn_on_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "turn_on_test.ngc" turn_on_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o turn_on_test_map.ncd turn_on_test.ngd turn_on_test.pcf 
+par -w -intstyle ise -ol high -mt off turn_on_test_map.ncd turn_on_test.ncd turn_on_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml turn_on_test.twx turn_on_test.ncd -o turn_on_test.twr turn_on_test.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f turn_on_test.ut turn_on_test.ncd 

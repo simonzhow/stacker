@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/CS M152A/lab4/stacker.xst" -ofn "E:/CS M152A/lab4/stacker.syr" 

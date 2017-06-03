@@ -1,0 +1,614 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: score_main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "score_main.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "score_main"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : score_main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\CS M152A\lab4\score_display.v" into library work
+Parsing module <segment_display>.
+Analyzing Verilog file "E:\CS M152A\lab4\score_counter.v" into library work
+Parsing module <score_counter>.
+Analyzing Verilog file "E:\CS M152A\lab4\debounce - Copy.v" into library work
+Parsing module <debounce>.
+Analyzing Verilog file "E:\CS M152A\lab4\score_main.v" into library work
+Parsing module <score_main>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <score_main>.
+
+Elaborating module <debounce>.
+
+Elaborating module <score_counter>.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\score_counter.v" Line 72: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <segment_display>.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\score_main.v" Line 103: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\score_main.v" Line 109: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\score_main.v" Line 115: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\score_main.v" Line 121: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <score_main>.
+    Related source file is "E:\CS M152A\lab4\score_main.v".
+    Found 32-bit register for signal <segment_counter>.
+    Found 1-bit register for signal <segment_clock>.
+    Found 4-bit register for signal <an>.
+    Found 8-bit register for signal <seg>.
+    Found 2-bit register for signal <count>.
+    Found 32-bit adder for signal <segment_counter[31]_GND_1_o_add_1_OUT> created at line 93.
+    Found 2-bit adder for signal <count[1]_GND_1_o_add_12_OUT> created at line 121.
+    Found 4x4-bit Read Only RAM for signal <an[3]_GND_1_o_mux_22_OUT>
+    Found 8-bit 3-to-1 multiplexer for signal <seg[7]_PWR_1_o_mux_23_OUT> created at line 105.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  47 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <score_main> synthesized.
+
+Synthesizing Unit <debounce>.
+    Related source file is "E:\CS M152A\lab4\debounce - Copy.v".
+    Found 10-bit register for signal <m_counter>.
+    Found 1-bit register for signal <temp_button>.
+    Found 10-bit adder for signal <m_counter[9]_GND_2_o_add_2_OUT> created at line 20.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <debounce> synthesized.
+
+Synthesizing Unit <score_counter>.
+    Related source file is "E:\CS M152A\lab4\score_counter.v".
+    Found 4-bit register for signal <val_1>.
+    Found 32-bit register for signal <button_counter>.
+    Found 1-bit register for signal <button_clock>.
+    Found 32-bit adder for signal <button_counter[31]_GND_3_o_add_1_OUT> created at line 55.
+    Found 4-bit adder for signal <val_1[3]_GND_3_o_add_5_OUT> created at line 72.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <score_counter> synthesized.
+
+Synthesizing Unit <segment_display>.
+    Related source file is "E:\CS M152A\lab4\score_display.v".
+WARNING:Xst:647 - Input <clock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16x8-bit Read Only RAM for signal <segment_val0>
+    Found 16x8-bit Read Only RAM for signal <segment_val1>
+    Summary:
+	inferred   2 RAM(s).
+Unit <segment_display> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x8-bit single-port Read Only RAM                    : 2
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 6
+ 10-bit adder                                          : 2
+ 2-bit adder                                           : 1
+ 32-bit adder                                          : 2
+ 4-bit adder                                           : 1
+# Registers                                            : 12
+ 1-bit register                                        : 4
+ 10-bit register                                       : 2
+ 2-bit register                                        : 1
+ 32-bit register                                       : 2
+ 4-bit register                                        : 2
+ 8-bit register                                        : 1
+# Multiplexers                                         : 5
+ 10-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 2
+ 8-bit 3-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <debounce>.
+The following registers are absorbed into counter <m_counter>: 1 register on signal <m_counter>.
+Unit <debounce> synthesized (advanced).
+
+Synthesizing (advanced) Unit <score_counter>.
+The following registers are absorbed into counter <val_1>: 1 register on signal <val_1>.
+The following registers are absorbed into counter <button_counter>: 1 register on signal <button_counter>.
+Unit <score_counter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <score_main>.
+The following registers are absorbed into counter <segment_counter>: 1 register on signal <segment_counter>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+INFO:Xst:3231 - The small RAM <Mram_an[3]_GND_1_o_mux_22_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <count>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <score_main> synthesized (advanced).
+
+Synthesizing (advanced) Unit <segment_display>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segment_val0> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <value0>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <segment_val0>  |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segment_val1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <value1>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <segment_val1>  |          |
+    -----------------------------------------------------------------------
+Unit <segment_display> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x8-bit single-port distributed Read Only RAM        : 2
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Counters                                             : 6
+ 10-bit up counter                                     : 2
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+# Multiplexers                                         : 1
+ 8-bit 3-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <seg_7> (without init value) has a constant value of 1 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <score_main> ...
+
+Optimizing unit <score_counter> ...
+WARNING:Xst:1710 - FF/Latch <increment_button/m_counter_6> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <increment_button/m_counter_7> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <increment_button/m_counter_8> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <increment_button/m_counter_9> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reset_button/m_counter_4> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reset_button/m_counter_5> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reset_button/m_counter_6> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reset_button/m_counter_7> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reset_button/m_counter_8> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reset_button/m_counter_9> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <score/button_counter_31> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <score/button_counter_30> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <score/button_counter_29> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <score/button_counter_28> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <score/button_counter_27> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <score/button_counter_26> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <score/button_counter_25> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <score/button_counter_24> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_15> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_16> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_17> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_18> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_19> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_20> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_21> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_22> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_23> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_24> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_25> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_26> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_27> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_28> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_29> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_30> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment_counter_31> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <increment_button/m_counter_4> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <increment_button/m_counter_5> (without init value) has a constant value of 0 in block <score_main>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <segment_counter_0> in Unit <score_main> is equivalent to the following FF/Latch, which will be removed : <score/button_counter_0> 
+INFO:Xst:2261 - The FF/Latch <segment_counter_1> in Unit <score_main> is equivalent to the following FF/Latch, which will be removed : <score/button_counter_1> 
+INFO:Xst:2261 - The FF/Latch <segment_counter_2> in Unit <score_main> is equivalent to the following FF/Latch, which will be removed : <score/button_counter_2> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block score_main, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 65
+ Flip-Flops                                            : 65
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : score_main.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 207
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 37
+#      LUT2                        : 6
+#      LUT3                        : 1
+#      LUT4                        : 11
+#      LUT5                        : 25
+#      LUT6                        : 32
+#      MUXCY                       : 43
+#      VCC                         : 1
+#      XORCY                       : 44
+# FlipFlops/Latches                : 65
+#      FD                          : 13
+#      FDC                         : 38
+#      FDCE                        : 4
+#      FDR                         : 10
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 2
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              65  out of  18224     0%  
+ Number of Slice LUTs:                  118  out of   9112     1%  
+    Number used as Logic:               118  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    118
+   Number with an unused Flip Flop:      53  out of    118    44%  
+   Number with an unused LUT:             0  out of    118     0%  
+   Number of fully used LUT-FF pairs:    65  out of    118    55%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    232     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+segment_clock                      | NONE(an_0)             | 13    |
+clk                                | BUFGP                  | 48    |
+score/button_clock                 | NONE(score/val_1_3)    | 4     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.223ns (Maximum Frequency: 310.265MHz)
+   Minimum input arrival time before clock: 3.151ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'segment_clock'
+  Clock period: 2.266ns (frequency: 441.248MHz)
+  Total number of paths / destination ports: 25 / 13
+-------------------------------------------------------------------------
+Delay:               2.266ns (Levels of Logic = 1)
+  Source:            count_0 (FF)
+  Destination:       count_0 (FF)
+  Source Clock:      segment_clock rising
+  Destination Clock: segment_clock rising
+
+  Data Path: count_0 to count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              13   0.447   0.932  count_0 (count_0)
+     INV:I->O              1   0.206   0.579  Mcount_count_xor<0>11_INV_0 (Result<0>1)
+     FD:D                      0.102          count_0
+    ----------------------------------------
+    Total                      2.266ns (0.755ns logic, 1.511ns route)
+                                       (33.3% logic, 66.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.223ns (frequency: 310.265MHz)
+  Total number of paths / destination ports: 1344 / 86
+-------------------------------------------------------------------------
+Delay:               3.223ns (Levels of Logic = 2)
+  Source:            score/button_counter_12 (FF)
+  Destination:       score/button_counter_23 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: score/button_counter_12 to score/button_counter_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.447   1.015  score/button_counter_12 (score/button_counter_12)
+     LUT6:I0->O           12   0.203   1.253  score/button_counter[31]_GND_3_o_equal_1_o<31>1 (score/button_counter[31]_GND_3_o_equal_1_o<31>)
+     LUT5:I0->O            1   0.203   0.000  score/Mcount_button_counter_eqn_231 (score/Mcount_button_counter_eqn_23)
+     FDC:D                     0.102          score/button_counter_23
+    ----------------------------------------
+    Total                      3.223ns (0.955ns logic, 2.268ns route)
+                                       (29.6% logic, 70.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'score/button_clock'
+  Clock period: 2.741ns (frequency: 364.764MHz)
+  Total number of paths / destination ports: 26 / 8
+-------------------------------------------------------------------------
+Delay:               2.741ns (Levels of Logic = 1)
+  Source:            score/val_1_2 (FF)
+  Destination:       score/val_1_3 (FF)
+  Source Clock:      score/button_clock rising
+  Destination Clock: score/button_clock rising
+
+  Data Path: score/val_1_2 to score/val_1_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            10   0.447   1.085  score/val_1_2 (score/val_1_2)
+     LUT5:I2->O            4   0.205   0.683  score/_n0033_inv1 (score/_n0033_inv)
+     FDCE:CE                   0.322          score/val_1_0
+    ----------------------------------------
+    Total                      2.741ns (0.974ns logic, 1.767ns route)
+                                       (35.5% logic, 64.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              3.151ns (Levels of Logic = 2)
+  Source:            btnR (PAD)
+  Destination:       increment_button/m_counter_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btnR to increment_button/m_counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  btnR_IBUF (btnR_IBUF)
+     INV:I->O              5   0.206   0.714  btnR_inv1_INV_0 (btnR_inv)
+     FDR:R                     0.430          increment_button/m_counter_0
+    ----------------------------------------
+    Total                      3.151ns (1.858ns logic, 1.293ns route)
+                                       (59.0% logic, 41.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'segment_clock'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            seg_6 (FF)
+  Destination:       seg<6> (PAD)
+  Source Clock:      segment_clock rising
+
+  Data Path: seg_6 to seg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  seg_6 (seg_6)
+     OBUF:I->O                 2.571          seg_6_OBUF (seg<6>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.223|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock score/button_clock
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk               |    2.616|         |         |         |
+score/button_clock|    2.741|         |         |         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock segment_clock
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+score/button_clock|    1.973|         |         |         |
+segment_clock     |    2.266|         |         |         |
+------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.10 secs
+ 
+--> 
+
+Total memory usage is 257744 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   44 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+
