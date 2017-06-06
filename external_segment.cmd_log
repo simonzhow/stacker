@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "E:/CS M152A/lab4/external_segment.xst" -ofn "E:/CS M152A/lab4/external_segment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "external_segment.ngc" external_segment.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o external_segment_map.ncd external_segment.ngd external_segment.pcf 
+par -w -intstyle ise -ol high -mt off external_segment_map.ncd external_segment.ncd external_segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml external_segment.twx external_segment.ncd -o external_segment.twr external_segment.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f external_segment.ut external_segment.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/external_segment.xst" -ofn "E:/CS M152A/lab4/external_segment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "external_segment.ngc" external_segment.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o external_segment_map.ncd external_segment.ngd external_segment.pcf 
+par -w -intstyle ise -ol high -mt off external_segment_map.ncd external_segment.ncd external_segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml external_segment.twx external_segment.ncd -o external_segment.twr external_segment.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f external_segment.ut external_segment.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/external_segment.xst" -ofn "E:/CS M152A/lab4/external_segment.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/external_segment.xst" -ofn "E:/CS M152A/lab4/external_segment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "external_segment.ngc" external_segment.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o external_segment_map.ncd external_segment.ngd external_segment.pcf 
+par -w -intstyle ise -ol high -mt off external_segment_map.ncd external_segment.ncd external_segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml external_segment.twx external_segment.ncd -o external_segment.twr external_segment.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f external_segment.ut external_segment.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/external_segment.xst" -ofn "E:/CS M152A/lab4/external_segment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "external_segment.ngc" external_segment.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o external_segment_map.ncd external_segment.ngd external_segment.pcf 
+par -w -intstyle ise -ol high -mt off external_segment_map.ncd external_segment.ncd external_segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml external_segment.twx external_segment.ncd -o external_segment.twr external_segment.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f external_segment.ut external_segment.ncd 

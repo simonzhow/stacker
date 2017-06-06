@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Reading design: level_0.prj
 
@@ -107,6 +107,8 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 Analyzing Verilog file "E:\CS M152A\lab4\score_main.v" into library work
 Parsing module <score_main>.
+Analyzing Verilog file "E:\CS M152A\lab4\external_segment.v" into library work
+Parsing module <external_segment>.
 Analyzing Verilog file "E:\CS M152A\lab4\debounce - Copy.v" into library work
 Parsing module <debounce>.
 Analyzing Verilog file "E:\CS M152A\lab4\clock_selector - Copy.v" into library work
@@ -122,34 +124,36 @@ Parsing module <level_0>.
 
 Elaborating module <level_0>.
 
+Elaborating module <external_segment>.
+
 Elaborating module <clock_divider>.
 
 Elaborating module <clock_selector>.
 
 Elaborating module <debounce>.
-WARNING:HDLCompiler:604 - "E:\CS M152A\lab4\level_0.v" Line 102: Module instantiation should have an instance name
+WARNING:HDLCompiler:604 - "E:\CS M152A\lab4\level_0.v" Line 118: Module instantiation should have an instance name
 
 Elaborating module <score_main>.
 WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\score_main.v" Line 70: Result of 2-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\score_main.v" Line 76: Result of 2-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 114: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 126: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 143: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 147: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 151: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 155: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 159: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 163: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 167: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 171: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 175: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 179: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 183: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 187: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 191: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 254: Result of 13-bit expression is truncated to fit in 12-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 266: Result of 13-bit expression is truncated to fit in 12-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 276: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 145: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 157: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 172: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 176: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 180: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 184: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 188: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 192: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 196: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 200: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 204: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 208: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 212: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 216: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 220: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 284: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 296: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 306: Result of 3-bit expression is truncated to fit in 2-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -157,6 +161,9 @@ WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 276: Result of 3-bit
 
 Synthesizing Unit <level_0>.
     Related source file is "E:\CS M152A\lab4\level_0.v".
+    Found 1-bit register for signal <btnS_db>.
+    Found 1-bit register for signal <btnS_ff>.
+    Found 8-bit register for signal <base>.
     Found 4-bit register for signal <lvl>.
     Found 8-bit register for signal <ds>.
     Found 4-bit register for signal <mv_cnt>.
@@ -164,25 +171,36 @@ Synthesizing Unit <level_0>.
     Found 8-bit register for signal <ds_move_height>.
     Found 8-bit register for signal <seg>.
     Found 4-bit register for signal <an>.
+    Found 8-bit register for signal <JC>.
     Found 8-bit register for signal <JA>.
     Found 8-bit register for signal <JB>.
     Found 8-bit register for signal <flash>.
     Found 12-bit register for signal <flash_counter>.
     Found 2-bit register for signal <count>.
-    Found 8-bit register for signal <base>.
-    Found 4-bit adder for signal <lvl[3]_GND_1_o_add_7_OUT> created at line 126.
-    Found 4-bit adder for signal <mv_cnt[3]_GND_1_o_add_44_OUT> created at line 191.
-    Found 12-bit adder for signal <flash_counter[11]_GND_1_o_add_104_OUT> created at line 266.
-    Found 2-bit adder for signal <count[1]_GND_1_o_add_110_OUT> created at line 276.
-    Found 8x16-bit Read Only RAM for signal <_n0431>
-    Found 8-bit comparator not equal for signal <n0001> created at line 122
+    Found 4-bit adder for signal <lvl[3]_GND_1_o_add_7_OUT> created at line 157.
+    Found 4-bit adder for signal <mv_cnt[3]_GND_1_o_add_44_OUT> created at line 220.
+    Found 12-bit adder for signal <flash_counter[11]_GND_1_o_add_105_OUT> created at line 296.
+    Found 2-bit adder for signal <count[1]_GND_1_o_add_111_OUT> created at line 306.
+    Found 8x16-bit Read Only RAM for signal <_n0436>
+    Found 8-bit comparator not equal for signal <n0003> created at line 153
     Summary:
 	inferred   1 RAM(s).
 	inferred   4 Adder/Subtractor(s).
-	inferred  90 D-type flip-flop(s).
+	inferred 100 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 	inferred  19 Multiplexer(s).
 Unit <level_0> synthesized.
+
+Synthesizing Unit <external_segment>.
+    Related source file is "E:\CS M152A\lab4\external_segment.v".
+WARNING:Xst:647 - Input <clock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit comparator lessequal for signal <n0000> created at line 41
+    Found 4-bit comparator lessequal for signal <n0002> created at line 44
+    Found 4-bit comparator lessequal for signal <n0004> created at line 47
+    Summary:
+	inferred   3 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <external_segment> synthesized.
 
 Synthesizing Unit <clock_divider>.
     Related source file is "E:\CS M152A\lab4\clock_divider.v".
@@ -199,12 +217,12 @@ WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and l
     Found 32-bit register for signal <lvl_3_counter>.
     Found 1-bit register for signal <lvl_3_output>.
     Found 32-bit register for signal <blinking_counter>.
-    Found 32-bit adder for signal <blinking_counter[31]_GND_2_o_add_2_OUT> created at line 46.
-    Found 32-bit adder for signal <debounce_counter[31]_GND_2_o_add_7_OUT> created at line 60.
-    Found 32-bit adder for signal <led_counter[31]_GND_2_o_add_12_OUT> created at line 74.
-    Found 32-bit adder for signal <lvl_1_counter[31]_GND_2_o_add_17_OUT> created at line 88.
-    Found 32-bit adder for signal <lvl_2_counter[31]_GND_2_o_add_22_OUT> created at line 102.
-    Found 32-bit adder for signal <lvl_3_counter[31]_GND_2_o_add_27_OUT> created at line 116.
+    Found 32-bit adder for signal <blinking_counter[31]_GND_3_o_add_2_OUT> created at line 46.
+    Found 32-bit adder for signal <debounce_counter[31]_GND_3_o_add_7_OUT> created at line 60.
+    Found 32-bit adder for signal <led_counter[31]_GND_3_o_add_12_OUT> created at line 74.
+    Found 32-bit adder for signal <lvl_1_counter[31]_GND_3_o_add_17_OUT> created at line 88.
+    Found 32-bit adder for signal <lvl_2_counter[31]_GND_3_o_add_22_OUT> created at line 102.
+    Found 32-bit adder for signal <lvl_3_counter[31]_GND_3_o_add_27_OUT> created at line 116.
     Summary:
 	inferred   6 Adder/Subtractor(s).
 	inferred 198 D-type flip-flop(s).
@@ -212,8 +230,8 @@ Unit <clock_divider> synthesized.
 
 Synthesizing Unit <clock_selector>.
     Related source file is "E:\CS M152A\lab4\clock_selector - Copy.v".
-    Found 4-bit comparator lessequal for signal <n0000> created at line 46
-    Found 4-bit comparator lessequal for signal <n0002> created at line 49
+    Found 4-bit comparator lessequal for signal <n0000> created at line 37
+    Found 4-bit comparator lessequal for signal <n0002> created at line 41
     Summary:
 	inferred   2 Comparator(s).
 	inferred   2 Multiplexer(s).
@@ -223,7 +241,7 @@ Synthesizing Unit <debounce>.
     Related source file is "E:\CS M152A\lab4\debounce - Copy.v".
     Found 10-bit register for signal <m_counter>.
     Found 1-bit register for signal <temp_button>.
-    Found 10-bit adder for signal <m_counter[9]_GND_4_o_add_2_OUT> created at line 20.
+    Found 10-bit adder for signal <m_counter[9]_GND_5_o_add_2_OUT> created at line 20.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  11 D-type flip-flop(s).
@@ -237,8 +255,8 @@ Synthesizing Unit <score_main>.
     Found 8-bit register for signal <segment>.
     Found 1-bit register for signal <count>.
     Found 32-bit register for signal <segment_counter>.
-    Found 32-bit adder for signal <segment_counter[31]_GND_5_o_add_12_OUT> created at line 60.
-    Found 1-bit adder for signal <count_PWR_5_o_add_19_OUT<0>> created at line 76.
+    Found 32-bit adder for signal <segment_counter[31]_GND_6_o_add_12_OUT> created at line 60.
+    Found 1-bit adder for signal <count_PWR_6_o_add_19_OUT<0>> created at line 76.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  46 D-type flip-flop(s).
@@ -251,31 +269,31 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  8x16-bit single-port Read Only RAM                    : 1
-# Adders/Subtractors                                   : 14
+# Adders/Subtractors                                   : 13
  1-bit adder                                           : 1
- 10-bit adder                                          : 2
+ 10-bit adder                                          : 1
  12-bit adder                                          : 1
  2-bit adder                                           : 1
  32-bit adder                                          : 7
  4-bit adder                                           : 2
-# Registers                                            : 33
- 1-bit register                                        : 10
- 10-bit register                                       : 2
+# Registers                                            : 34
+ 1-bit register                                        : 11
+ 10-bit register                                       : 1
  12-bit register                                       : 1
  16-bit register                                       : 1
  2-bit register                                        : 1
  32-bit register                                       : 7
  4-bit register                                        : 4
- 8-bit register                                        : 7
-# Comparators                                          : 3
- 4-bit comparator lessequal                            : 2
+ 8-bit register                                        : 8
+# Comparators                                          : 6
+ 4-bit comparator lessequal                            : 5
  8-bit comparator not equal                            : 1
-# Multiplexers                                         : 25
+# Multiplexers                                         : 27
  1-bit 2-to-1 multiplexer                              : 2
- 10-bit 2-to-1 multiplexer                             : 2
+ 10-bit 2-to-1 multiplexer                             : 1
  12-bit 2-to-1 multiplexer                             : 1
- 4-bit 2-to-1 multiplexer                              : 7
- 8-bit 2-to-1 multiplexer                              : 13
+ 4-bit 2-to-1 multiplexer                              : 9
+ 8-bit 2-to-1 multiplexer                              : 14
 
 =========================================================================
 
@@ -302,9 +320,9 @@ The following registers are absorbed into counter <m_counter>: 1 register on sig
 Unit <debounce> synthesized (advanced).
 
 Synthesizing (advanced) Unit <level_0>.
-The following registers are absorbed into counter <count>: 1 register on signal <count>.
 The following registers are absorbed into counter <flash_counter>: 1 register on signal <flash_counter>.
-INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <lvl> prevents it from being combined with the RAM <Mram__n0431> for implementation as read-only block RAM.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <lvl> prevents it from being combined with the RAM <Mram__n0436> for implementation as read-only block RAM.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -315,7 +333,7 @@ INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the 
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram__n0431> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram__n0436> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 Unit <level_0> synthesized (advanced).
 
 Synthesizing (advanced) Unit <score_main>.
@@ -331,21 +349,21 @@ Macro Statistics
  8x16-bit single-port distributed Read Only RAM        : 1
 # Adders/Subtractors                                   : 2
  4-bit adder                                           : 2
-# Counters                                             : 12
+# Counters                                             : 11
  1-bit up counter                                      : 1
- 10-bit up counter                                     : 2
+ 10-bit up counter                                     : 1
  12-bit up counter                                     : 1
  2-bit up counter                                      : 1
  32-bit up counter                                     : 7
-# Registers                                            : 97
- Flip-Flops                                            : 97
-# Comparators                                          : 3
- 4-bit comparator lessequal                            : 2
+# Registers                                            : 106
+ Flip-Flops                                            : 106
+# Comparators                                          : 6
+ 4-bit comparator lessequal                            : 5
  8-bit comparator not equal                            : 1
-# Multiplexers                                         : 29
+# Multiplexers                                         : 32
  1-bit 2-to-1 multiplexer                              : 10
- 4-bit 2-to-1 multiplexer                              : 7
- 8-bit 2-to-1 multiplexer                              : 12
+ 4-bit 2-to-1 multiplexer                              : 9
+ 8-bit 2-to-1 multiplexer                              : 13
 
 =========================================================================
 
@@ -358,8 +376,11 @@ WARNING:Xst:1426 - The value init of the FF/Latch ds_move_height_0 hinder the co
    You should achieve better results by setting this init to 1.
 INFO:Xst:2261 - The FF/Latch <ds_move_height_1> in Unit <level_0> is equivalent to the following FF/Latch, which will be removed : <ds_height_0> 
 INFO:Xst:2261 - The FF/Latch <count> in Unit <score_main> is equivalent to the following FF/Latch, which will be removed : <an_val_0> 
+WARNING:Xst:1710 - FF/Latch <JC_5> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <JC_2> in Unit <level_0> is equivalent to the following 2 FFs/Latches, which will be removed : <JC_4> <JC_7> 
 
 Optimizing unit <level_0> ...
+WARNING:Xst:1710 - FF/Latch <JC_0> (without init value) has a constant value of 1 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <clock_divider> ...
 
@@ -368,24 +389,89 @@ WARNING:Xst:1710 - FF/Latch <segment_7> (without init value) has a constant valu
 WARNING:Xst:1710 - FF/Latch <seg_7> (without init value) has a constant value of 1 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <an_2> (without init value) has a constant value of 1 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <an_3> (without init value) has a constant value of 1 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_1> has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <increment/m_counter_4> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <increment/m_counter_5> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <increment/m_counter_6> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <increment/m_counter_7> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <increment/m_counter_8> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <increment/m_counter_9> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <reset_debounce/m_counter_4> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <reset_debounce/m_counter_5> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <reset_debounce/m_counter_6> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <reset_debounce/m_counter_7> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <reset_debounce/m_counter_8> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <reset_debounce/m_counter_9> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <flash_0> in Unit <level_0> is equivalent to the following 7 FFs/Latches, which will be removed : <flash_1> <flash_2> <flash_3> <flash_4> <flash_5> <flash_6> <flash_7> 
+WARNING:Xst:1710 - FF/Latch <divide_clock/lvl_1_counter_26> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_1_counter_27> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_1_counter_28> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_1_counter_29> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_1_counter_30> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_1_counter_31> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/led_counter_18> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/led_counter_19> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/led_counter_20> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/led_counter_21> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/led_counter_22> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/led_counter_23> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/led_counter_24> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/led_counter_25> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/led_counter_26> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/led_counter_27> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/led_counter_28> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_15> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_16> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_17> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_18> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_19> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_20> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_21> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_22> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_23> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_24> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_25> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_26> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_27> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_28> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_29> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_30> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_i000001/segment_counter_31> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_1_counter_25> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_3_counter_23> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_3_counter_24> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_3_counter_25> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_3_counter_26> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_3_counter_27> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_3_counter_28> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_3_counter_29> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_3_counter_30> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_3_counter_31> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_2_counter_23> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_2_counter_24> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_2_counter_25> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_2_counter_26> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_2_counter_27> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_2_counter_28> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_2_counter_29> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_2_counter_30> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/lvl_2_counter_31> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/led_counter_29> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/led_counter_30> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/led_counter_31> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/debounce_counter_23> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/debounce_counter_24> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/debounce_counter_25> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/debounce_counter_26> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/debounce_counter_27> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/debounce_counter_28> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/debounce_counter_29> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/debounce_counter_30> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/debounce_counter_31> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/blinking_counter_26> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/blinking_counter_27> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/blinking_counter_28> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/blinking_counter_29> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/blinking_counter_30> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <divide_clock/blinking_counter_31> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <divide_clock/lvl_2_counter_5> in Unit <level_0> is equivalent to the following 4 FFs/Latches, which will be removed : <divide_clock/lvl_3_counter_5> <divide_clock/blinking_counter_5> <divide_clock/debounce_counter_5> <divide_clock/lvl_1_counter_5> 
+INFO:Xst:2261 - The FF/Latch <divide_clock/lvl_2_counter_6> in Unit <level_0> is equivalent to the following 2 FFs/Latches, which will be removed : <divide_clock/lvl_3_counter_6> <divide_clock/blinking_counter_6> 
+INFO:Xst:2261 - The FF/Latch <divide_clock/lvl_2_counter_0> in Unit <level_0> is equivalent to the following 6 FFs/Latches, which will be removed : <divide_clock/lvl_3_counter_0> <divide_clock/blinking_counter_0> <divide_clock/debounce_counter_0> <divide_clock/led_counter_0> <divide_clock/lvl_1_counter_0> <_i000001/segment_counter_0> 
+INFO:Xst:2261 - The FF/Latch <divide_clock/lvl_2_counter_1> in Unit <level_0> is equivalent to the following 6 FFs/Latches, which will be removed : <divide_clock/lvl_3_counter_1> <divide_clock/blinking_counter_1> <divide_clock/debounce_counter_1> <divide_clock/led_counter_1> <divide_clock/lvl_1_counter_1> <_i000001/segment_counter_1> 
+INFO:Xst:2261 - The FF/Latch <divide_clock/lvl_2_counter_2> in Unit <level_0> is equivalent to the following 6 FFs/Latches, which will be removed : <divide_clock/lvl_3_counter_2> <divide_clock/blinking_counter_2> <divide_clock/debounce_counter_2> <divide_clock/led_counter_2> <divide_clock/lvl_1_counter_2> <_i000001/segment_counter_2> 
+INFO:Xst:2261 - The FF/Latch <divide_clock/lvl_2_counter_3> in Unit <level_0> is equivalent to the following 5 FFs/Latches, which will be removed : <divide_clock/lvl_3_counter_3> <divide_clock/blinking_counter_3> <divide_clock/debounce_counter_3> <divide_clock/led_counter_3> <divide_clock/lvl_1_counter_3> 
+INFO:Xst:2261 - The FF/Latch <divide_clock/lvl_2_counter_4> in Unit <level_0> is equivalent to the following 4 FFs/Latches, which will be removed : <divide_clock/lvl_3_counter_4> <divide_clock/blinking_counter_4> <divide_clock/debounce_counter_4> <divide_clock/lvl_1_counter_4> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block level_0, actual ratio is 5.
+Found area constraint ratio of 100 (+ 5) on block level_0, actual ratio is 4.
+FlipFlop JC_2 has been replicated 2 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
 
@@ -393,8 +479,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 328
- Flip-Flops                                            : 328
+# Registers                                            : 241
+ Flip-Flops                                            : 241
 
 =========================================================================
 
@@ -417,29 +503,30 @@ Top Level Output File Name         : level_0.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1121
+# BELS                             : 754
 #      GND                         : 1
 #      INV                         : 14
-#      LUT1                        : 228
-#      LUT2                        : 231
-#      LUT3                        : 17
-#      LUT4                        : 51
-#      LUT5                        : 17
-#      LUT6                        : 83
-#      MUXCY                       : 234
+#      LUT1                        : 160
+#      LUT2                        : 90
+#      LUT3                        : 19
+#      LUT4                        : 52
+#      LUT5                        : 43
+#      LUT6                        : 66
+#      MUXCY                       : 166
 #      VCC                         : 1
-#      XORCY                       : 244
-# FlipFlops/Latches                : 328
-#      FD                          : 267
-#      FDE                         : 47
-#      FDR                         : 10
-#      FDRE                        : 4
+#      XORCY                       : 142
+# FlipFlops/Latches                : 241
+#      FD                          : 147
+#      FDE                         : 63
+#      FDP                         : 2
+#      FDR                         : 23
+#      FDRE                        : 6
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 30
+# IO Buffers                       : 38
 #      IBUF                        : 2
-#      OBUF                        : 28
+#      OBUF                        : 36
 
 Device utilization summary:
 ---------------------------
@@ -448,21 +535,21 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             319  out of  18224     1%  
- Number of Slice LUTs:                  641  out of   9112     7%  
-    Number used as Logic:               641  out of   9112     7%  
+ Number of Slice Registers:             226  out of  18224     1%  
+ Number of Slice LUTs:                  444  out of   9112     4%  
+    Number used as Logic:               444  out of   9112     4%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    650
-   Number with an unused Flip Flop:     331  out of    650    50%  
-   Number with an unused LUT:             9  out of    650     1%  
-   Number of fully used LUT-FF pairs:   310  out of    650    47%  
-   Number of unique control sets:        10
+ Number of LUT Flip Flop pairs used:    455
+   Number with an unused Flip Flop:     229  out of    455    50%  
+   Number with an unused LUT:            11  out of    455     2%  
+   Number of fully used LUT-FF pairs:   215  out of    455    47%  
+   Number of unique control sets:        14
 
 IO Utilization: 
- Number of IOs:                          31
- Number of bonded IOBs:                  31  out of    232    13%  
-    IOB Flip Flops/Latches:               9
+ Number of IOs:                          39
+ Number of bonded IOBs:                  39  out of    232    16%  
+    IOB Flip Flops/Latches:              15
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
@@ -488,10 +575,10 @@ Clock Information:
 -----------------------------------------------------+------------------------+-------+
 Clock Signal                                         | Clock buffer(FF name)  | Load  |
 -----------------------------------------------------+------------------------+-------+
+clk                                                  | BUFGP                  | 159   |
+divide_clock/led_output                              | BUFG                   | 49    |
 master_level_clock(level_clock/Mmux_clock_to_use11:O)| NONE(*)(mv_cnt_0)      | 12    |
 divide_clock/debounce_output                         | NONE(base_0)           | 12    |
-clk                                                  | BUFGP                  | 255   |
-divide_clock/led_output                              | BUFG                   | 40    |
 _i000001/segment_clock                               | NONE(_i000001/count)   | 9     |
 -----------------------------------------------------+------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
@@ -507,14 +594,61 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.130ns (Maximum Frequency: 242.113MHz)
-   Minimum input arrival time before clock: 3.151ns
+   Minimum period: 4.107ns (Maximum Frequency: 243.460MHz)
+   Minimum input arrival time before clock: 3.319ns
    Maximum output required time after clock: 3.634ns
    Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.078ns (frequency: 245.248MHz)
+  Total number of paths / destination ports: 4531 / 140
+-------------------------------------------------------------------------
+Delay:               4.078ns (Levels of Logic = 3)
+  Source:            divide_clock/blinking_counter_8 (FF)
+  Destination:       divide_clock/blinking_counter_25 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: divide_clock/blinking_counter_8 to divide_clock/blinking_counter_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.981  divide_clock/blinking_counter_8 (divide_clock/blinking_counter_8)
+     LUT6:I0->O            2   0.203   0.864  divide_clock/blinking_counter[31]_GND_3_o_equal_2_o<31>4 (divide_clock/blinking_counter[31]_GND_3_o_equal_2_o<31>3)
+     LUT6:I2->O           19   0.203   1.072  divide_clock/blinking_counter[31]_GND_3_o_equal_2_o<31>5 (divide_clock/blinking_counter[31]_GND_3_o_equal_2_o)
+     LUT2:I1->O            1   0.205   0.000  divide_clock/blinking_counter_25_rstpot (divide_clock/blinking_counter_25_rstpot)
+     FD:D                      0.102          divide_clock/blinking_counter_25
+    ----------------------------------------
+    Total                      4.078ns (1.160ns logic, 2.918ns route)
+                                       (28.4% logic, 71.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'divide_clock/led_output'
+  Clock period: 4.107ns (frequency: 243.460MHz)
+  Total number of paths / destination ports: 1122 / 69
+-------------------------------------------------------------------------
+Delay:               4.107ns (Levels of Logic = 2)
+  Source:            flash_counter_2 (FF)
+  Destination:       flash_0 (FF)
+  Source Clock:      divide_clock/led_output rising
+  Destination Clock: divide_clock/led_output rising
+
+  Data Path: flash_counter_2 to flash_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.447   1.015  flash_counter_2 (flash_counter_2)
+     LUT6:I0->O           21   0.203   1.114  blinking_output_flash_counter[11]_AND_15_o2 (blinking_output_flash_counter[11]_AND_15_o2)
+     LUT3:I2->O            8   0.205   0.802  blinking_output_flash_counter[11]_AND_15_o3 (blinking_output_flash_counter[11]_AND_15_o)
+     FDE:CE                    0.322          flash_0
+    ----------------------------------------
+    Total                      4.107ns (1.177ns logic, 2.930ns route)
+                                       (28.7% logic, 71.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'master_level_clock'
@@ -532,7 +666,7 @@ Delay:               3.019ns (Levels of Logic = 1)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q             12   0.447   1.137  mv_cnt_2 (mv_cnt_2)
-     LUT3:I0->O           12   0.205   0.908  _n0365_inv1 (_n0365_inv)
+     LUT3:I0->O           12   0.205   0.908  _n0374_inv1 (_n0374_inv)
      FDE:CE                    0.322          mv_cnt_0
     ----------------------------------------
     Total                      3.019ns (0.974ns logic, 2.045ns route)
@@ -540,49 +674,26 @@ Delay:               3.019ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'divide_clock/debounce_output'
-  Clock period: 3.467ns (frequency: 288.448MHz)
-  Total number of paths / destination ports: 98 / 12
+  Clock period: 3.443ns (frequency: 290.447MHz)
+  Total number of paths / destination ports: 94 / 12
 -------------------------------------------------------------------------
-Delay:               3.467ns (Levels of Logic = 2)
-  Source:            lvl_2 (FF)
+Delay:               3.443ns (Levels of Logic = 2)
+  Source:            lvl_1 (FF)
   Destination:       lvl_0 (FF)
   Source Clock:      divide_clock/debounce_output rising
   Destination Clock: divide_clock/debounce_output rising
 
-  Data Path: lvl_2 to lvl_0
+  Data Path: lvl_1 to lvl_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            32   0.447   1.396  lvl_2 (lvl_2)
-     LUT3:I1->O           21   0.203   1.114  ds[7]_base[7]_not_equal_6_o5_SW5 (N47)
+     FDRE:C->Q            43   0.447   1.553  lvl_1 (lvl_1)
+     LUT3:I1->O           13   0.203   0.933  ds[7]_base[7]_not_equal_6_o5_SW5 (N49)
      LUT6:I5->O            1   0.205   0.000  Mmux_lvl[3]_lvl[3]_mux_12_OUT11 (lvl[3]_lvl[3]_mux_12_OUT<0>)
      FDRE:D                    0.102          lvl_0
     ----------------------------------------
-    Total                      3.467ns (0.957ns logic, 2.510ns route)
-                                       (27.6% logic, 72.4% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'divide_clock/led_output'
-  Clock period: 3.290ns (frequency: 303.970MHz)
-  Total number of paths / destination ports: 582 / 40
--------------------------------------------------------------------------
-Delay:               3.290ns (Levels of Logic = 2)
-  Source:            flash_counter_8 (FF)
-  Destination:       flash_counter_0 (FF)
-  Source Clock:      divide_clock/led_output rising
-  Destination Clock: divide_clock/led_output rising
-
-  Data Path: flash_counter_8 to flash_counter_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDE:C->Q              2   0.447   0.981  flash_counter_8 (flash_counter_8)
-     LUT6:I0->O           29   0.203   1.354  blinking_output_flash_counter[11]_AND_11_o1 (blinking_output_flash_counter[11]_AND_11_o1)
-     LUT4:I2->O            1   0.203   0.000  Mcount_flash_counter_eqn_01 (Mcount_flash_counter_eqn_0)
-     FDE:D                     0.102          flash_counter_0
-    ----------------------------------------
-    Total                      3.290ns (0.955ns logic, 2.335ns route)
-                                       (29.0% logic, 71.0% route)
+    Total                      3.443ns (0.957ns logic, 2.486ns route)
+                                       (27.8% logic, 72.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock '_i000001/segment_clock'
@@ -607,83 +718,78 @@ Delay:               2.190ns (Levels of Logic = 1)
                                        (34.5% logic, 65.5% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.130ns (frequency: 242.113MHz)
-  Total number of paths / destination ports: 11095 / 231
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Delay:               4.130ns (Levels of Logic = 3)
-  Source:            divide_clock/lvl_3_counter_25 (FF)
-  Destination:       divide_clock/lvl_3_output (FF)
-  Source Clock:      clk rising
+Offset:              2.268ns (Levels of Logic = 1)
+  Source:            btnS (PAD)
+  Destination:       btnS_ff (FF)
   Destination Clock: clk rising
 
-  Data Path: divide_clock/lvl_3_counter_25 to divide_clock/lvl_3_output
+  Data Path: btnS to btnS_ff
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.447   0.981  divide_clock/lvl_3_counter_25 (divide_clock/lvl_3_counter_25)
-     LUT6:I0->O            2   0.203   0.961  divide_clock/lvl_3_counter[31]_GND_2_o_equal_27_o<31>5 (divide_clock/lvl_3_counter[31]_GND_2_o_equal_27_o<31>4)
-     LUT6:I1->O           17   0.203   1.028  divide_clock/lvl_3_counter[31]_GND_2_o_equal_27_o<31>7 (divide_clock/lvl_3_counter[31]_GND_2_o_equal_27_o)
-     LUT2:I1->O            1   0.205   0.000  divide_clock/lvl_3_output_rstpot (divide_clock/lvl_3_output_rstpot)
-     FD:D                      0.102          divide_clock/lvl_3_output
+     IBUF:I->O             2   1.222   0.616  btnS_IBUF (btnS_IBUF)
+     FDP:PRE                   0.430          btnS_ff
     ----------------------------------------
-    Total                      4.130ns (1.160ns logic, 2.970ns route)
-                                       (28.1% logic, 71.9% route)
+    Total                      2.268ns (1.652ns logic, 0.616ns route)
+                                       (72.8% logic, 27.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'divide_clock/led_output'
-  Total number of paths / destination ports: 10 / 10
+  Total number of paths / destination ports: 11 / 11
 -------------------------------------------------------------------------
-Offset:              3.151ns (Levels of Logic = 2)
-  Source:            btnS (PAD)
-  Destination:       increment/m_counter_0 (FF)
+Offset:              3.319ns (Levels of Logic = 2)
+  Source:            btnR (PAD)
+  Destination:       reset_debounce/m_counter_0 (FF)
   Destination Clock: divide_clock/led_output rising
 
-  Data Path: btnS to increment/m_counter_0
+  Data Path: btnR to reset_debounce/m_counter_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.579  btnS_IBUF (btnS_IBUF)
-     INV:I->O              5   0.206   0.714  btnS_inv1_INV_0 (btnS_inv)
-     FDR:R                     0.430          increment/m_counter_0
+     IBUF:I->O             1   1.222   0.579  btnR_IBUF (btnR_IBUF)
+     INV:I->O             11   0.206   0.882  btnR_inv1_INV_0 (btnR_inv)
+     FDR:R                     0.430          reset_debounce/m_counter_0
     ----------------------------------------
-    Total                      3.151ns (1.858ns logic, 1.293ns route)
-                                       (59.0% logic, 41.0% route)
+    Total                      3.319ns (1.858ns logic, 1.461ns route)
+                                       (56.0% logic, 44.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'divide_clock/led_output'
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
 Offset:              3.634ns (Levels of Logic = 1)
-  Source:            JB_7 (FF)
-  Destination:       JB<7> (PAD)
+  Source:            JA_7 (FF)
+  Destination:       JA<7> (PAD)
   Source Clock:      divide_clock/led_output rising
 
-  Data Path: JB_7 to JB<7>
+  Data Path: JA_7 to JA<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.447   0.616  JB_7 (JB_7)
-     OBUF:I->O                 2.571          JB_7_OBUF (JB<7>)
+     FD:C->Q               2   0.447   0.616  JA_7 (JA_7)
+     OBUF:I->O                 2.571          JA_7_OBUF (JA<7>)
     ----------------------------------------
     Total                      3.634ns (3.018ns logic, 0.616ns route)
                                        (83.0% logic, 17.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 9 / 9
+  Total number of paths / destination ports: 15 / 15
 -------------------------------------------------------------------------
 Offset:              3.597ns (Levels of Logic = 1)
-  Source:            seg_6 (FF)
-  Destination:       seg<6> (PAD)
+  Source:            JC_2_1 (FF)
+  Destination:       JC<7> (PAD)
   Source Clock:      clk rising
 
-  Data Path: seg_6 to seg<6>
+  Data Path: JC_2_1 to JC<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.447   0.579  seg_6 (seg_6)
-     OBUF:I->O                 2.571          seg_6_OBUF (seg<6>)
+     FD:C->Q               1   0.447   0.579  JC_2_1 (JC_2_1)
+     OBUF:I->O                 2.571          JC_7_OBUF (JC<7>)
     ----------------------------------------
     Total                      3.597ns (3.018ns logic, 0.579ns route)
                                        (83.9% logic, 16.1% route)
@@ -699,7 +805,7 @@ Clock to Setup on destination clock _i000001/segment_clock
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 _i000001/segment_clock      |    2.190|         |         |         |
-divide_clock/debounce_output|    2.277|         |         |         |
+divide_clock/debounce_output|    2.459|         |         |         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -708,8 +814,8 @@ Clock to Setup on destination clock clk
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 _i000001/segment_clock      |    1.405|         |         |         |
-clk                         |    4.130|         |         |         |
-divide_clock/debounce_output|    3.005|         |         |         |
+clk                         |    4.078|         |         |         |
+divide_clock/debounce_output|    3.256|         |         |         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock divide_clock/debounce_output
@@ -717,9 +823,10 @@ Clock to Setup on destination clock divide_clock/debounce_output
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-divide_clock/debounce_output|    3.467|         |         |         |
-divide_clock/led_output     |    2.862|         |         |         |
-master_level_clock          |    3.018|         |         |         |
+clk                         |    2.833|         |         |         |
+divide_clock/debounce_output|    3.443|         |         |         |
+divide_clock/led_output     |    1.591|         |         |         |
+master_level_clock          |    2.998|         |         |         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock divide_clock/led_output
@@ -727,9 +834,9 @@ Clock to Setup on destination clock divide_clock/led_output
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-clk                         |    2.486|         |         |         |
-divide_clock/debounce_output|    5.027|         |         |         |
-divide_clock/led_output     |    3.290|         |         |         |
+clk                         |    3.272|         |         |         |
+divide_clock/debounce_output|    4.804|         |         |         |
+divide_clock/led_output     |    4.107|         |         |         |
 master_level_clock          |    2.646|         |         |         |
 ----------------------------+---------+---------+---------+---------+
 
@@ -744,14 +851,14 @@ master_level_clock|    3.019|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.05 secs
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 21.32 secs
  
 --> 
 
-Total memory usage is 258896 kilobytes
+Total memory usage is 259152 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   45 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of warnings :  106 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
 

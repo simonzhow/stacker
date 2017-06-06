@@ -1,4 +1,5 @@
 verilog work "score_main.v"
+verilog work "external_segment.v"
 verilog work "debounce - Copy.v"
 verilog work "clock_selector - Copy.v"
 verilog work "clock_divider.v"

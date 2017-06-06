@@ -18,7 +18,7 @@ begin
 	else
 		begin
 			m_counter <= m_counter + 1'b1;
-			if(m_counter == 4'b1111) // Counted until maximum
+			if(m_counter == 2'b11) // Counted until maximum
 				begin
 					temp_button <= 1;
 					m_counter <= 0;

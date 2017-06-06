@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.68d on Tue Jun 06 14:47:59 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "JC<2>" LOCATE = SITE "K6" LEVEL 1;
+COMP "JC<3>" LOCATE = SITE "G3" LEVEL 1;
+COMP "JC<4>" LOCATE = SITE "G1" LEVEL 1;
+COMP "JC<5>" LOCATE = SITE "J7" LEVEL 1;
+COMP "JC<6>" LOCATE = SITE "J6" LEVEL 1;
+COMP "JC<7>" LOCATE = SITE "F2" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "JC<0>" LOCATE = SITE "H3" LEVEL 1;
+COMP "JC<1>" LOCATE = SITE "L7" LEVEL 1;
+SCHEMATIC END;
+

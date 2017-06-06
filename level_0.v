@@ -28,14 +28,30 @@ module level_0(
 	
 	output reg [7:0] JA, //columns
 	output reg [7:0] JB, // rows
+	output reg [7:0] JC,
 	output reg [7:0] seg,
 	output reg [3:0] an
     );
 
 
+
 reg [7:0] base = 8'b00000000;
 reg [3:0] lvl = 0;
+wire [7:0] seg_lvl_lights;
 wire reset_state, increment_state;
+
+external_segment lvl_segment_display (
+	.clock(clk),
+	.level(lvl),
+	.input_bits(seg_lvl_lights)
+);
+//module external_segment(
+//	input clk,
+//	input [3:0] level,
+//
+//	output reg [7:0] JC
+//    );
+
 
 ///////////////////////// CLOCKS //////////////////////////////
 wire debounce_output;
@@ -87,11 +103,11 @@ debounce reset_debounce(
 	.m_state(reset_state)
 );
 
-debounce increment(
-	.m_button(btnS),
-	.m_clock(led_output),
-	.m_state(increment_state)
-);
+//debounce increment(
+//	.m_button(btnS),
+//	.m_clock(led_output),
+//	.m_state(increment_state)
+//);
 	
 //////////////////////////////////////////////////////
 
@@ -108,9 +124,22 @@ score_main(
 
 ////////////////////////////////////////////////////
 
+reg btnS_db, btnS_ff;
+
+always @ (posedge clk or posedge btnS) begin
+	if (btnS) begin
+		{btnS_db, btnS_ff} <= 2'b11;
+	end
+	
+	else begin
+		{btnS_db, btnS_ff} <= {btnS_ff, 1'b0};
+	end
+end
+
 // possibly make debounce_output depend on the level clock
 always @ (posedge debounce_output) begin
-	if (increment_state) begin
+	if (btnS_db) begin
+	//if (increment_state) begin
 		if(lvl == 0) begin
 			base <= ds;
 			lvl <= lvl + 1;
@@ -134,8 +163,6 @@ always @ (posedge debounce_output) begin
 	end
 	
 end
-
-
 
 reg [7:0] ds = 8'b00000000;
 reg [3:0] mv_cnt = 0;
@@ -238,6 +265,7 @@ always @ (posedge clk) begin
 	endcase
 	seg <= useless_seg;
 	an <= useless_an;
+	JC <= seg_lvl_lights;
 end
 
 

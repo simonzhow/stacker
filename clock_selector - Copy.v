@@ -26,30 +26,24 @@ module clock_selector(
 	input lvl_1_clock,
 	input lvl_2_clock,
 	input lvl_3_clock,
-	
 	output result_clock
-
-
-//	// SELECT WHICH CLOCK TO USE
-//	input regular_clock, // 1 Hz
-//	input adjust_clock, // 2Hz
-//	
-//	// ADJUST INPUT
-//	input wire adjust,
-//	output result_clock
-	);
+);
 
 	reg clock_to_use;
+
 	
 	always @ (*)
 		begin
 			if (level <= 3) begin
+//				segment_level <= 1;
 				clock_to_use = lvl_1_clock;
 			end
 			else if (level <= 5) begin
+//				segment_level <= 2;
 				clock_to_use = lvl_2_clock;
 			end
 			else begin
+//				segment_level <= 3;
 				clock_to_use = lvl_3_clock;
 			end
 		end
