@@ -1,0 +1,565 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml sound.twx sound.ncd -o sound.twr sound.pcf -ucf
+nexys3 - Copy.ucf
+
+Design file:              sound.ncd
+Physical constraint file: sound.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-06-08)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 136 paths analyzed, 52 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   1.730ns.
+--------------------------------------------------------------------------------
+
+Paths for end point sound_counter_14 (SLICE_X24Y61.CIN), 12 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     8.320ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sound_counter_0 (FF)
+  Destination:          sound_counter_14 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.642ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.003ns (0.153 - 0.156)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: sound_counter_0 to sound_counter_14
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y58.AQ      Tcko                  0.408   sound_counter<3>
+                                                       sound_counter_0
+    SLICE_X24Y58.A5      net (fanout=1)        0.337   sound_counter<0>
+    SLICE_X24Y58.COUT    Topcya                0.395   sound_counter<3>
+                                                       Mcount_sound_counter_lut<0>_INV_0
+                                                       Mcount_sound_counter_cy<3>
+    SLICE_X24Y59.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<3>
+    SLICE_X24Y59.COUT    Tbyp                  0.076   sound_counter<7>
+                                                       Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.COUT    Tbyp                  0.076   sound_counter<11>
+                                                       Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CLK     Tcinck                0.341   sound_counter<15>
+                                                       Mcount_sound_counter_xor<15>
+                                                       sound_counter_14
+    -------------------------------------------------  ---------------------------
+    Total                                      1.642ns (1.296ns logic, 0.346ns route)
+                                                       (78.9% logic, 21.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.397ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sound_counter_4 (FF)
+  Destination:          sound_counter_14 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.563ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.005ns (0.153 - 0.158)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: sound_counter_4 to sound_counter_14
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y59.AQ      Tcko                  0.408   sound_counter<7>
+                                                       sound_counter_4
+    SLICE_X24Y59.A5      net (fanout=1)        0.337   sound_counter<4>
+    SLICE_X24Y59.COUT    Topcya                0.395   sound_counter<7>
+                                                       sound_counter<4>_rt
+                                                       Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.COUT    Tbyp                  0.076   sound_counter<11>
+                                                       Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CLK     Tcinck                0.341   sound_counter<15>
+                                                       Mcount_sound_counter_xor<15>
+                                                       sound_counter_14
+    -------------------------------------------------  ---------------------------
+    Total                                      1.563ns (1.220ns logic, 0.343ns route)
+                                                       (78.1% logic, 21.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.420ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sound_counter_3 (FF)
+  Destination:          sound_counter_14 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.542ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.003ns (0.153 - 0.156)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: sound_counter_3 to sound_counter_14
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y58.DQ      Tcko                  0.408   sound_counter<3>
+                                                       sound_counter_3
+    SLICE_X24Y58.D5      net (fanout=1)        0.372   sound_counter<3>
+    SLICE_X24Y58.COUT    Topcyd                0.260   sound_counter<3>
+                                                       sound_counter<3>_rt
+                                                       Mcount_sound_counter_cy<3>
+    SLICE_X24Y59.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<3>
+    SLICE_X24Y59.COUT    Tbyp                  0.076   sound_counter<7>
+                                                       Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.COUT    Tbyp                  0.076   sound_counter<11>
+                                                       Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CLK     Tcinck                0.341   sound_counter<15>
+                                                       Mcount_sound_counter_xor<15>
+                                                       sound_counter_14
+    -------------------------------------------------  ---------------------------
+    Total                                      1.542ns (1.161ns logic, 0.381ns route)
+                                                       (75.3% logic, 24.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point sound_counter_15 (SLICE_X24Y61.CIN), 12 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     8.320ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sound_counter_0 (FF)
+  Destination:          sound_counter_15 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.642ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.003ns (0.153 - 0.156)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: sound_counter_0 to sound_counter_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y58.AQ      Tcko                  0.408   sound_counter<3>
+                                                       sound_counter_0
+    SLICE_X24Y58.A5      net (fanout=1)        0.337   sound_counter<0>
+    SLICE_X24Y58.COUT    Topcya                0.395   sound_counter<3>
+                                                       Mcount_sound_counter_lut<0>_INV_0
+                                                       Mcount_sound_counter_cy<3>
+    SLICE_X24Y59.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<3>
+    SLICE_X24Y59.COUT    Tbyp                  0.076   sound_counter<7>
+                                                       Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.COUT    Tbyp                  0.076   sound_counter<11>
+                                                       Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CLK     Tcinck                0.341   sound_counter<15>
+                                                       Mcount_sound_counter_xor<15>
+                                                       sound_counter_15
+    -------------------------------------------------  ---------------------------
+    Total                                      1.642ns (1.296ns logic, 0.346ns route)
+                                                       (78.9% logic, 21.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.397ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sound_counter_4 (FF)
+  Destination:          sound_counter_15 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.563ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.005ns (0.153 - 0.158)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: sound_counter_4 to sound_counter_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y59.AQ      Tcko                  0.408   sound_counter<7>
+                                                       sound_counter_4
+    SLICE_X24Y59.A5      net (fanout=1)        0.337   sound_counter<4>
+    SLICE_X24Y59.COUT    Topcya                0.395   sound_counter<7>
+                                                       sound_counter<4>_rt
+                                                       Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.COUT    Tbyp                  0.076   sound_counter<11>
+                                                       Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CLK     Tcinck                0.341   sound_counter<15>
+                                                       Mcount_sound_counter_xor<15>
+                                                       sound_counter_15
+    -------------------------------------------------  ---------------------------
+    Total                                      1.563ns (1.220ns logic, 0.343ns route)
+                                                       (78.1% logic, 21.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.420ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sound_counter_3 (FF)
+  Destination:          sound_counter_15 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.542ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.003ns (0.153 - 0.156)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: sound_counter_3 to sound_counter_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y58.DQ      Tcko                  0.408   sound_counter<3>
+                                                       sound_counter_3
+    SLICE_X24Y58.D5      net (fanout=1)        0.372   sound_counter<3>
+    SLICE_X24Y58.COUT    Topcyd                0.260   sound_counter<3>
+                                                       sound_counter<3>_rt
+                                                       Mcount_sound_counter_cy<3>
+    SLICE_X24Y59.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<3>
+    SLICE_X24Y59.COUT    Tbyp                  0.076   sound_counter<7>
+                                                       Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.COUT    Tbyp                  0.076   sound_counter<11>
+                                                       Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CLK     Tcinck                0.341   sound_counter<15>
+                                                       Mcount_sound_counter_xor<15>
+                                                       sound_counter_15
+    -------------------------------------------------  ---------------------------
+    Total                                      1.542ns (1.161ns logic, 0.381ns route)
+                                                       (75.3% logic, 24.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point sound_counter_13 (SLICE_X24Y61.CIN), 12 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     8.332ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sound_counter_0 (FF)
+  Destination:          sound_counter_13 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.630ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.003ns (0.153 - 0.156)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: sound_counter_0 to sound_counter_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y58.AQ      Tcko                  0.408   sound_counter<3>
+                                                       sound_counter_0
+    SLICE_X24Y58.A5      net (fanout=1)        0.337   sound_counter<0>
+    SLICE_X24Y58.COUT    Topcya                0.395   sound_counter<3>
+                                                       Mcount_sound_counter_lut<0>_INV_0
+                                                       Mcount_sound_counter_cy<3>
+    SLICE_X24Y59.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<3>
+    SLICE_X24Y59.COUT    Tbyp                  0.076   sound_counter<7>
+                                                       Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.COUT    Tbyp                  0.076   sound_counter<11>
+                                                       Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CLK     Tcinck                0.329   sound_counter<15>
+                                                       Mcount_sound_counter_xor<15>
+                                                       sound_counter_13
+    -------------------------------------------------  ---------------------------
+    Total                                      1.630ns (1.284ns logic, 0.346ns route)
+                                                       (78.8% logic, 21.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.409ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sound_counter_4 (FF)
+  Destination:          sound_counter_13 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.551ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.005ns (0.153 - 0.158)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: sound_counter_4 to sound_counter_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y59.AQ      Tcko                  0.408   sound_counter<7>
+                                                       sound_counter_4
+    SLICE_X24Y59.A5      net (fanout=1)        0.337   sound_counter<4>
+    SLICE_X24Y59.COUT    Topcya                0.395   sound_counter<7>
+                                                       sound_counter<4>_rt
+                                                       Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.COUT    Tbyp                  0.076   sound_counter<11>
+                                                       Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CLK     Tcinck                0.329   sound_counter<15>
+                                                       Mcount_sound_counter_xor<15>
+                                                       sound_counter_13
+    -------------------------------------------------  ---------------------------
+    Total                                      1.551ns (1.208ns logic, 0.343ns route)
+                                                       (77.9% logic, 22.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.432ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sound_counter_3 (FF)
+  Destination:          sound_counter_13 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.530ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.003ns (0.153 - 0.156)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: sound_counter_3 to sound_counter_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y58.DQ      Tcko                  0.408   sound_counter<3>
+                                                       sound_counter_3
+    SLICE_X24Y58.D5      net (fanout=1)        0.372   sound_counter<3>
+    SLICE_X24Y58.COUT    Topcyd                0.260   sound_counter<3>
+                                                       sound_counter<3>_rt
+                                                       Mcount_sound_counter_cy<3>
+    SLICE_X24Y59.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<3>
+    SLICE_X24Y59.COUT    Tbyp                  0.076   sound_counter<7>
+                                                       Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<7>
+    SLICE_X24Y60.COUT    Tbyp                  0.076   sound_counter<11>
+                                                       Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CIN     net (fanout=1)        0.003   Mcount_sound_counter_cy<11>
+    SLICE_X24Y61.CLK     Tcinck                0.329   sound_counter<15>
+                                                       Mcount_sound_counter_xor<15>
+                                                       sound_counter_13
+    -------------------------------------------------  ---------------------------
+    Total                                      1.530ns (1.149ns logic, 0.381ns route)
+                                                       (75.1% logic, 24.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point sound_counter_15 (SLICE_X24Y61.D6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.459ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               sound_counter_15 (FF)
+  Destination:          sound_counter_15 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.459ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: sound_counter_15 to sound_counter_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y61.DQ      Tcko                  0.200   sound_counter<15>
+                                                       sound_counter_15
+    SLICE_X24Y61.D6      net (fanout=2)        0.022   sound_counter<15>
+    SLICE_X24Y61.CLK     Tah         (-Th)    -0.237   sound_counter<15>
+                                                       sound_counter<15>_rt
+                                                       Mcount_sound_counter_xor<15>
+                                                       sound_counter_15
+    -------------------------------------------------  ---------------------------
+    Total                                      0.459ns (0.437ns logic, 0.022ns route)
+                                                       (95.2% logic, 4.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point sound_counter_1 (SLICE_X24Y58.B5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.504ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               sound_counter_1 (FF)
+  Destination:          sound_counter_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.504ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: sound_counter_1 to sound_counter_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y58.BQ      Tcko                  0.200   sound_counter<3>
+                                                       sound_counter_1
+    SLICE_X24Y58.B5      net (fanout=1)        0.070   sound_counter<1>
+    SLICE_X24Y58.CLK     Tah         (-Th)    -0.234   sound_counter<3>
+                                                       sound_counter<1>_rt
+                                                       Mcount_sound_counter_cy<3>
+                                                       sound_counter_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.504ns (0.434ns logic, 0.070ns route)
+                                                       (86.1% logic, 13.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point sound_counter_5 (SLICE_X24Y59.B5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.504ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               sound_counter_5 (FF)
+  Destination:          sound_counter_5 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.504ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: sound_counter_5 to sound_counter_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y59.BQ      Tcko                  0.200   sound_counter<7>
+                                                       sound_counter_5
+    SLICE_X24Y59.B5      net (fanout=1)        0.070   sound_counter<5>
+    SLICE_X24Y59.CLK     Tah         (-Th)    -0.234   sound_counter<7>
+                                                       sound_counter<5>_rt
+                                                       Mcount_sound_counter_cy<7>
+                                                       sound_counter_5
+    -------------------------------------------------  ---------------------------
+    Total                                      0.504ns (0.434ns logic, 0.070ns route)
+                                                       (86.1% logic, 13.9% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 8.270ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
+  Physical resource: clk_BUFGP/BUFG/I0
+  Logical resource: clk_BUFGP/BUFG/I0
+  Location pin: BUFGMUX_X3Y13.I0
+  Clock network: clk_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 9.570ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 0.430ns (2325.581MHz) (Tcp)
+  Physical resource: sound_counter<3>/CLK
+  Logical resource: sound_counter_0/CK
+  Location pin: SLICE_X24Y58.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 9.570ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 0.430ns (2325.581MHz) (Tcp)
+  Physical resource: sound_counter<3>/CLK
+  Logical resource: sound_counter_1/CK
+  Location pin: SLICE_X24Y58.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.680|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 136 paths, 0 nets, and 24 connections
+
+Design statistics:
+   Minimum period:   1.730ns{1}   (Maximum frequency: 578.035MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Thu Jun 08 10:50:25 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 219 MB
+
+
+

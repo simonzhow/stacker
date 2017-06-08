@@ -1,0 +1,20 @@
+xst -intstyle ise -ifn "E:/CS M152A/lab4/sound.xst" -ofn "E:/CS M152A/lab4/sound.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/sound.xst" -ofn "E:/CS M152A/lab4/sound.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "sound.ngc" sound.ngd  
+xst -intstyle ise -ifn "E:/CS M152A/lab4/sound.xst" -ofn "E:/CS M152A/lab4/sound.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/sound.xst" -ofn "E:/CS M152A/lab4/sound.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/sound.xst" -ofn "E:/CS M152A/lab4/sound.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "sound.ngc" sound.ngd  
+xst -intstyle ise -ifn "E:/CS M152A/lab4/sound.xst" -ofn "E:/CS M152A/lab4/sound.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "sound.ngc" sound.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sound_map.ncd sound.ngd sound.pcf 
+par -w -intstyle ise -ol high -mt off sound_map.ncd sound.ncd sound.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sound.twx sound.ncd -o sound.twr sound.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f sound.ut sound.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/sound.xst" -ofn "E:/CS M152A/lab4/sound.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "nexys3 - Copy.ucf" -p xc6slx16-csg324-3 "sound.ngc" sound.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sound_map.ncd sound.ngd sound.pcf 
+par -w -intstyle ise -ol high -mt off sound_map.ncd sound.ncd sound.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sound.twx sound.ncd -o sound.twr sound.pcf -ucf {nexys3 - Copy.ucf} 
+bitgen -intstyle ise -f sound.ut sound.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/sound.xst" -ofn "E:/CS M152A/lab4/sound.syr" 

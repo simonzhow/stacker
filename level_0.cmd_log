@@ -206,3 +206,42 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off level_0_map.ncd level_0.ncd level_0.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml level_0.twx level_0.ncd -o level_0.twr level_0.pcf -ucf nexys3-test.ucf 
 bitgen -intstyle ise -f level_0.ut level_0.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/level_0.xst" -ofn "E:/CS M152A/lab4/level_0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "level_0.ngc" level_0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o level_0_map.ncd level_0.ngd level_0.pcf 
+par -w -intstyle ise -ol high -mt off level_0_map.ncd level_0.ncd level_0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml level_0.twx level_0.ncd -o level_0.twr level_0.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f level_0.ut level_0.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/level_0.xst" -ofn "E:/CS M152A/lab4/level_0.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/level_0.xst" -ofn "E:/CS M152A/lab4/level_0.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/level_0.xst" -ofn "E:/CS M152A/lab4/level_0.syr" 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/level_0.xst" -ofn "E:/CS M152A/lab4/level_0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "level_0.ngc" level_0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o level_0_map.ncd level_0.ngd level_0.pcf 
+par -w -intstyle ise -ol high -mt off level_0_map.ncd level_0.ncd level_0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml level_0.twx level_0.ncd -o level_0.twr level_0.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f level_0.ut level_0.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/level_0.xst" -ofn "E:/CS M152A/lab4/level_0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "level_0.ngc" level_0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o level_0_map.ncd level_0.ngd level_0.pcf 
+par -w -intstyle ise -ol high -mt off level_0_map.ncd level_0.ncd level_0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml level_0.twx level_0.ncd -o level_0.twr level_0.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f level_0.ut level_0.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/level_0.xst" -ofn "E:/CS M152A/lab4/level_0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "level_0.ngc" level_0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o level_0_map.ncd level_0.ngd level_0.pcf 
+par -w -intstyle ise -ol high -mt off level_0_map.ncd level_0.ncd level_0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml level_0.twx level_0.ncd -o level_0.twr level_0.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f level_0.ut level_0.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/level_0.xst" -ofn "E:/CS M152A/lab4/level_0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "level_0.ngc" level_0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o level_0_map.ncd level_0.ngd level_0.pcf 
+par -w -intstyle ise -ol high -mt off level_0_map.ncd level_0.ncd level_0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml level_0.twx level_0.ncd -o level_0.twr level_0.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f level_0.ut level_0.ncd 
+xst -intstyle ise -ifn "E:/CS M152A/lab4/level_0.xst" -ofn "E:/CS M152A/lab4/level_0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3-test.ucf -p xc6slx16-csg324-3 "level_0.ngc" level_0.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o level_0_map.ncd level_0.ngd level_0.pcf 
+par -w -intstyle ise -ol high -mt off level_0_map.ncd level_0.ncd level_0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml level_0.twx level_0.ncd -o level_0.twr level_0.pcf -ucf nexys3-test.ucf 
+bitgen -intstyle ise -f level_0.ut level_0.ncd 

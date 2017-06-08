@@ -30,7 +30,8 @@ module level_0(
 	output reg [7:0] JB, // rows
 	output reg [7:0] JC,
 	output reg [7:0] seg,
-	output reg [3:0] an
+	output reg [3:0] an,
+	output wire sound
     );
 
 
@@ -39,19 +40,25 @@ reg [7:0] base = 8'b00000000;
 reg [3:0] lvl = 0;
 wire [7:0] seg_lvl_lights;
 wire reset_state, increment_state;
+reg lets_hear_sound;
+
+
+///////////////////////// EXT SEG //////////////////////////////
 
 external_segment lvl_segment_display (
 	.clock(clk),
 	.level(lvl),
 	.input_bits(seg_lvl_lights)
 );
-//module external_segment(
-//	input clk,
-//	input [3:0] level,
-//
-//	output reg [7:0] JC
-//    );
 
+///////////////////////// SOUND //////////////////////////////
+sound sound_ouput (
+	.clock(clk),
+	.play_sound(lets_hear_sound),
+	.speaker(sound)
+
+);
+/////////////////////////////////////////////////////////////
 
 ///////////////////////// CLOCKS //////////////////////////////
 wire debounce_output;
@@ -83,15 +90,6 @@ clock_selector level_clock(
 	
 	.result_clock(master_level_clock)
 );
-
-//
-//input [3:0] level,
-//	
-//	input lvl_1_clock,
-//	input lvl_2_clock,
-//	input lvl_3_clock,
-//	
-//	output result_clock
 
 //////////////////////////////////////////////////////
 
@@ -276,34 +274,39 @@ always @ (posedge led_output) begin
 //	base <= 8'b00000111;
 	//Moving block handling
 	
-	if(lvl == 8) begin
+	if(lvl == 8) begin //win
 		JA <= 8'b11111111;
 		if(blinking_output && flash_counter != 12'b111111111111) begin
 			JB <= flash;
 			flash <= ~flash;
 			flash_counter <= flash_counter + 1; 
+			lets_hear_sound <= 1;
 		end
 		else begin 
 			flash_counter <= 0;
 			JA <= 8'b00000000;
+			lets_hear_sound <= 0;
 		end
 	end
-	else if(lvl == 9) begin 
+	else if(lvl == 9) begin //lose
 		JA <= 8'b00011000;
 		if(blinking_output && flash_counter != 12'b111111111111) begin
 			JB <= flash;
 			flash <= ~flash;
-			flash_counter <= flash_counter + 1; 
+			flash_counter <= flash_counter + 1;
+			lets_hear_sound <= 1;			
 		end
 		else begin 
 			flash_counter <= 0;
 			JA <= 8'b00000000;
+			lets_hear_sound <= 0;
 		end
 	end
 	else if(count == 0) begin
 		JA <= ds;
 		JB <= ds_move_height;
 		count <= count + 1;
+		lets_hear_sound <= 0;
 	end
 	//frozen block handling
 	//all ds values are dependent on level

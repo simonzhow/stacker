@@ -54,7 +54,7 @@ always @ (*)
 		
 		case(val)
 			 4'h1: segment_val1 = 8'b00001011;
-			 4'h2: segment_val1 = 8'b11011101;
+			 4'h2: segment_val1 = 8'b10111101;
 			 4'h3: segment_val1 = 8'b10011111;
 			 default: segment_val1 = 8'b00001000;
 		 endcase

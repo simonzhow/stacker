@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -105,6 +105,8 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Analyzing Verilog file "E:\CS M152A\lab4\sound.v" into library work
+Parsing module <sound>.
 Analyzing Verilog file "E:\CS M152A\lab4\score_main.v" into library work
 Parsing module <score_main>.
 Analyzing Verilog file "E:\CS M152A\lab4\external_segment.v" into library work
@@ -126,34 +128,37 @@ Elaborating module <level_0>.
 
 Elaborating module <external_segment>.
 
+Elaborating module <sound>.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\sound.v" Line 30: Result of 17-bit expression is truncated to fit in 16-bit target.
+
 Elaborating module <clock_divider>.
 
 Elaborating module <clock_selector>.
 
 Elaborating module <debounce>.
-WARNING:HDLCompiler:604 - "E:\CS M152A\lab4\level_0.v" Line 118: Module instantiation should have an instance name
+WARNING:HDLCompiler:604 - "E:\CS M152A\lab4\level_0.v" Line 116: Module instantiation should have an instance name
 
 Elaborating module <score_main>.
 WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\score_main.v" Line 70: Result of 2-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\score_main.v" Line 76: Result of 2-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 145: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 157: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 172: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 176: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 180: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 184: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 188: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 192: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 196: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 200: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 204: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 208: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 212: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 216: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 220: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 284: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 143: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 155: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 170: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 174: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 178: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 182: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 186: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 190: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 194: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 198: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 202: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 206: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 210: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 214: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 218: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 282: Result of 13-bit expression is truncated to fit in 12-bit target.
 WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 296: Result of 13-bit expression is truncated to fit in 12-bit target.
-WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 306: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "E:\CS M152A\lab4\level_0.v" Line 308: Result of 3-bit expression is truncated to fit in 2-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -176,17 +181,18 @@ Synthesizing Unit <level_0>.
     Found 8-bit register for signal <JB>.
     Found 8-bit register for signal <flash>.
     Found 12-bit register for signal <flash_counter>.
+    Found 1-bit register for signal <lets_hear_sound>.
     Found 2-bit register for signal <count>.
-    Found 4-bit adder for signal <lvl[3]_GND_1_o_add_7_OUT> created at line 157.
-    Found 4-bit adder for signal <mv_cnt[3]_GND_1_o_add_44_OUT> created at line 220.
+    Found 4-bit adder for signal <lvl[3]_GND_1_o_add_7_OUT> created at line 155.
+    Found 4-bit adder for signal <mv_cnt[3]_GND_1_o_add_44_OUT> created at line 218.
     Found 12-bit adder for signal <flash_counter[11]_GND_1_o_add_105_OUT> created at line 296.
-    Found 2-bit adder for signal <count[1]_GND_1_o_add_111_OUT> created at line 306.
-    Found 8x16-bit Read Only RAM for signal <_n0436>
-    Found 8-bit comparator not equal for signal <n0003> created at line 153
+    Found 2-bit adder for signal <count[1]_GND_1_o_add_111_OUT> created at line 308.
+    Found 8x16-bit Read Only RAM for signal <_n0447>
+    Found 8-bit comparator not equal for signal <n0003> created at line 151
     Summary:
 	inferred   1 RAM(s).
 	inferred   4 Adder/Subtractor(s).
-	inferred 100 D-type flip-flop(s).
+	inferred 101 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 	inferred  19 Multiplexer(s).
 Unit <level_0> synthesized.
@@ -201,6 +207,15 @@ WARNING:Xst:647 - Input <clock> is never used. This port will be preserved and l
 	inferred   3 Comparator(s).
 	inferred   3 Multiplexer(s).
 Unit <external_segment> synthesized.
+
+Synthesizing Unit <sound>.
+    Related source file is "E:\CS M152A\lab4\sound.v".
+    Found 16-bit register for signal <sound_counter>.
+    Found 16-bit adder for signal <sound_counter[15]_GND_3_o_add_1_OUT> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <sound> synthesized.
 
 Synthesizing Unit <clock_divider>.
     Related source file is "E:\CS M152A\lab4\clock_divider.v".
@@ -217,12 +232,12 @@ WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and l
     Found 32-bit register for signal <lvl_3_counter>.
     Found 1-bit register for signal <lvl_3_output>.
     Found 32-bit register for signal <blinking_counter>.
-    Found 32-bit adder for signal <blinking_counter[31]_GND_3_o_add_2_OUT> created at line 46.
-    Found 32-bit adder for signal <debounce_counter[31]_GND_3_o_add_7_OUT> created at line 60.
-    Found 32-bit adder for signal <led_counter[31]_GND_3_o_add_12_OUT> created at line 74.
-    Found 32-bit adder for signal <lvl_1_counter[31]_GND_3_o_add_17_OUT> created at line 88.
-    Found 32-bit adder for signal <lvl_2_counter[31]_GND_3_o_add_22_OUT> created at line 102.
-    Found 32-bit adder for signal <lvl_3_counter[31]_GND_3_o_add_27_OUT> created at line 116.
+    Found 32-bit adder for signal <blinking_counter[31]_GND_4_o_add_2_OUT> created at line 46.
+    Found 32-bit adder for signal <debounce_counter[31]_GND_4_o_add_7_OUT> created at line 60.
+    Found 32-bit adder for signal <led_counter[31]_GND_4_o_add_12_OUT> created at line 74.
+    Found 32-bit adder for signal <lvl_1_counter[31]_GND_4_o_add_17_OUT> created at line 88.
+    Found 32-bit adder for signal <lvl_2_counter[31]_GND_4_o_add_22_OUT> created at line 102.
+    Found 32-bit adder for signal <lvl_3_counter[31]_GND_4_o_add_27_OUT> created at line 116.
     Summary:
 	inferred   6 Adder/Subtractor(s).
 	inferred 198 D-type flip-flop(s).
@@ -241,7 +256,7 @@ Synthesizing Unit <debounce>.
     Related source file is "E:\CS M152A\lab4\debounce - Copy.v".
     Found 10-bit register for signal <m_counter>.
     Found 1-bit register for signal <temp_button>.
-    Found 10-bit adder for signal <m_counter[9]_GND_5_o_add_2_OUT> created at line 20.
+    Found 10-bit adder for signal <m_counter[9]_GND_6_o_add_2_OUT> created at line 20.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  11 D-type flip-flop(s).
@@ -255,8 +270,8 @@ Synthesizing Unit <score_main>.
     Found 8-bit register for signal <segment>.
     Found 1-bit register for signal <count>.
     Found 32-bit register for signal <segment_counter>.
-    Found 32-bit adder for signal <segment_counter[31]_GND_6_o_add_12_OUT> created at line 60.
-    Found 1-bit adder for signal <count_PWR_6_o_add_19_OUT<0>> created at line 76.
+    Found 32-bit adder for signal <segment_counter[31]_GND_7_o_add_12_OUT> created at line 60.
+    Found 1-bit adder for signal <count_PWR_7_o_add_19_OUT<0>> created at line 76.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  46 D-type flip-flop(s).
@@ -269,18 +284,19 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  8x16-bit single-port Read Only RAM                    : 1
-# Adders/Subtractors                                   : 13
+# Adders/Subtractors                                   : 14
  1-bit adder                                           : 1
  10-bit adder                                          : 1
  12-bit adder                                          : 1
+ 16-bit adder                                          : 1
  2-bit adder                                           : 1
  32-bit adder                                          : 7
  4-bit adder                                           : 2
-# Registers                                            : 34
- 1-bit register                                        : 11
+# Registers                                            : 36
+ 1-bit register                                        : 12
  10-bit register                                       : 1
  12-bit register                                       : 1
- 16-bit register                                       : 1
+ 16-bit register                                       : 2
  2-bit register                                        : 1
  32-bit register                                       : 7
  4-bit register                                        : 4
@@ -322,7 +338,7 @@ Unit <debounce> synthesized (advanced).
 Synthesizing (advanced) Unit <level_0>.
 The following registers are absorbed into counter <flash_counter>: 1 register on signal <flash_counter>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
-INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <lvl> prevents it from being combined with the RAM <Mram__n0436> for implementation as read-only block RAM.
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <lvl> prevents it from being combined with the RAM <Mram__n0447> for implementation as read-only block RAM.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -333,13 +349,17 @@ INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the 
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram__n0436> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram__n0447> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 Unit <level_0> synthesized (advanced).
 
 Synthesizing (advanced) Unit <score_main>.
 The following registers are absorbed into counter <segment_counter>: 1 register on signal <segment_counter>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
 Unit <score_main> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sound>.
+The following registers are absorbed into counter <sound_counter>: 1 register on signal <sound_counter>.
+Unit <sound> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -349,14 +369,15 @@ Macro Statistics
  8x16-bit single-port distributed Read Only RAM        : 1
 # Adders/Subtractors                                   : 2
  4-bit adder                                           : 2
-# Counters                                             : 11
+# Counters                                             : 12
  1-bit up counter                                      : 1
  10-bit up counter                                     : 1
  12-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
  2-bit up counter                                      : 1
  32-bit up counter                                     : 7
-# Registers                                            : 106
- Flip-Flops                                            : 106
+# Registers                                            : 107
+ Flip-Flops                                            : 107
 # Comparators                                          : 6
  4-bit comparator lessequal                            : 5
  8-bit comparator not equal                            : 1
@@ -376,11 +397,11 @@ WARNING:Xst:1426 - The value init of the FF/Latch ds_move_height_0 hinder the co
    You should achieve better results by setting this init to 1.
 INFO:Xst:2261 - The FF/Latch <ds_move_height_1> in Unit <level_0> is equivalent to the following FF/Latch, which will be removed : <ds_height_0> 
 INFO:Xst:2261 - The FF/Latch <count> in Unit <score_main> is equivalent to the following FF/Latch, which will be removed : <an_val_0> 
-WARNING:Xst:1710 - FF/Latch <JC_5> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <JC_6> (without init value) has a constant value of 0 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <JC_2> in Unit <level_0> is equivalent to the following 2 FFs/Latches, which will be removed : <JC_4> <JC_7> 
 
 Optimizing unit <level_0> ...
-WARNING:Xst:1710 - FF/Latch <JC_0> (without init value) has a constant value of 1 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <JC_3> (without init value) has a constant value of 1 in block <level_0>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <clock_divider> ...
 
@@ -479,8 +500,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 241
- Flip-Flops                                            : 241
+# Registers                                            : 258
+ Flip-Flops                                            : 258
 
 =========================================================================
 
@@ -503,30 +524,30 @@ Top Level Output File Name         : level_0.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 754
+# BELS                             : 805
 #      GND                         : 1
-#      INV                         : 14
-#      LUT1                        : 160
+#      INV                         : 15
+#      LUT1                        : 175
 #      LUT2                        : 90
-#      LUT3                        : 19
-#      LUT4                        : 52
-#      LUT5                        : 43
-#      LUT6                        : 66
-#      MUXCY                       : 166
+#      LUT3                        : 17
+#      LUT4                        : 53
+#      LUT5                        : 37
+#      LUT6                        : 77
+#      MUXCY                       : 181
 #      VCC                         : 1
-#      XORCY                       : 142
-# FlipFlops/Latches                : 241
-#      FD                          : 147
-#      FDE                         : 63
+#      XORCY                       : 158
+# FlipFlops/Latches                : 258
+#      FD                          : 148
+#      FDE                         : 79
 #      FDP                         : 2
 #      FDR                         : 23
 #      FDRE                        : 6
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 38
+# IO Buffers                       : 39
 #      IBUF                        : 2
-#      OBUF                        : 36
+#      OBUF                        : 37
 
 Device utilization summary:
 ---------------------------
@@ -535,20 +556,20 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             226  out of  18224     1%  
- Number of Slice LUTs:                  444  out of   9112     4%  
-    Number used as Logic:               444  out of   9112     4%  
+ Number of Slice Registers:             243  out of  18224     1%  
+ Number of Slice LUTs:                  464  out of   9112     5%  
+    Number used as Logic:               464  out of   9112     5%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    455
-   Number with an unused Flip Flop:     229  out of    455    50%  
-   Number with an unused LUT:            11  out of    455     2%  
-   Number of fully used LUT-FF pairs:   215  out of    455    47%  
-   Number of unique control sets:        14
+ Number of LUT Flip Flop pairs used:    475
+   Number with an unused Flip Flop:     232  out of    475    48%  
+   Number with an unused LUT:            11  out of    475     2%  
+   Number of fully used LUT-FF pairs:   232  out of    475    48%  
+   Number of unique control sets:        15
 
 IO Utilization: 
- Number of IOs:                          39
- Number of bonded IOBs:                  39  out of    232    16%  
+ Number of IOs:                          40
+ Number of bonded IOBs:                  40  out of    232    17%  
     IOB Flip Flops/Latches:              15
 
 Specific Feature Utilization:
@@ -575,8 +596,8 @@ Clock Information:
 -----------------------------------------------------+------------------------+-------+
 Clock Signal                                         | Clock buffer(FF name)  | Load  |
 -----------------------------------------------------+------------------------+-------+
-clk                                                  | BUFGP                  | 159   |
-divide_clock/led_output                              | BUFG                   | 49    |
+clk                                                  | BUFGP                  | 175   |
+divide_clock/led_output                              | BUFG                   | 50    |
 master_level_clock(level_clock/Mmux_clock_to_use11:O)| NONE(*)(mv_cnt_0)      | 12    |
 divide_clock/debounce_output                         | NONE(base_0)           | 12    |
 _i000001/segment_clock                               | NONE(_i000001/count)   | 9     |
@@ -594,7 +615,7 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.107ns (Maximum Frequency: 243.460MHz)
+   Minimum period: 4.140ns (Maximum Frequency: 241.560MHz)
    Minimum input arrival time before clock: 3.319ns
    Maximum output required time after clock: 3.634ns
    Maximum combinational path delay: No path found
@@ -606,7 +627,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 4.078ns (frequency: 245.248MHz)
-  Total number of paths / destination ports: 4531 / 140
+  Total number of paths / destination ports: 4667 / 156
 -------------------------------------------------------------------------
 Delay:               4.078ns (Levels of Logic = 3)
   Source:            divide_clock/blinking_counter_8 (FF)
@@ -619,8 +640,8 @@ Delay:               4.078ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               2   0.447   0.981  divide_clock/blinking_counter_8 (divide_clock/blinking_counter_8)
-     LUT6:I0->O            2   0.203   0.864  divide_clock/blinking_counter[31]_GND_3_o_equal_2_o<31>4 (divide_clock/blinking_counter[31]_GND_3_o_equal_2_o<31>3)
-     LUT6:I2->O           19   0.203   1.072  divide_clock/blinking_counter[31]_GND_3_o_equal_2_o<31>5 (divide_clock/blinking_counter[31]_GND_3_o_equal_2_o)
+     LUT6:I0->O            2   0.203   0.864  divide_clock/blinking_counter[31]_GND_4_o_equal_2_o<31>4 (divide_clock/blinking_counter[31]_GND_4_o_equal_2_o<31>3)
+     LUT6:I2->O           19   0.203   1.072  divide_clock/blinking_counter[31]_GND_4_o_equal_2_o<31>5 (divide_clock/blinking_counter[31]_GND_4_o_equal_2_o)
      LUT2:I1->O            1   0.205   0.000  divide_clock/blinking_counter_25_rstpot (divide_clock/blinking_counter_25_rstpot)
      FD:D                      0.102          divide_clock/blinking_counter_25
     ----------------------------------------
@@ -629,10 +650,10 @@ Delay:               4.078ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'divide_clock/led_output'
-  Clock period: 4.107ns (frequency: 243.460MHz)
-  Total number of paths / destination ports: 1122 / 69
+  Clock period: 4.140ns (frequency: 241.560MHz)
+  Total number of paths / destination ports: 1138 / 70
 -------------------------------------------------------------------------
-Delay:               4.107ns (Levels of Logic = 2)
+Delay:               4.140ns (Levels of Logic = 2)
   Source:            flash_counter_2 (FF)
   Destination:       flash_0 (FF)
   Source Clock:      divide_clock/led_output rising
@@ -642,13 +663,13 @@ Delay:               4.107ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              3   0.447   1.015  flash_counter_2 (flash_counter_2)
+     FDE:C->Q              4   0.447   1.048  flash_counter_2 (flash_counter_2)
      LUT6:I0->O           21   0.203   1.114  blinking_output_flash_counter[11]_AND_15_o2 (blinking_output_flash_counter[11]_AND_15_o2)
      LUT3:I2->O            8   0.205   0.802  blinking_output_flash_counter[11]_AND_15_o3 (blinking_output_flash_counter[11]_AND_15_o)
      FDE:CE                    0.322          flash_0
     ----------------------------------------
-    Total                      4.107ns (1.177ns logic, 2.930ns route)
-                                       (28.7% logic, 71.3% route)
+    Total                      4.140ns (1.177ns logic, 2.963ns route)
+                                       (28.4% logic, 71.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'master_level_clock'
@@ -666,7 +687,7 @@ Delay:               3.019ns (Levels of Logic = 1)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q             12   0.447   1.137  mv_cnt_2 (mv_cnt_2)
-     LUT3:I0->O           12   0.205   0.908  _n0374_inv1 (_n0374_inv)
+     LUT3:I0->O           12   0.205   0.908  _n0382_inv1 (_n0382_inv)
      FDE:CE                    0.322          mv_cnt_0
     ----------------------------------------
     Total                      3.019ns (0.974ns logic, 2.045ns route)
@@ -674,26 +695,26 @@ Delay:               3.019ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'divide_clock/debounce_output'
-  Clock period: 3.443ns (frequency: 290.447MHz)
-  Total number of paths / destination ports: 94 / 12
+  Clock period: 3.589ns (frequency: 278.664MHz)
+  Total number of paths / destination ports: 98 / 12
 -------------------------------------------------------------------------
-Delay:               3.443ns (Levels of Logic = 2)
+Delay:               3.589ns (Levels of Logic = 2)
   Source:            lvl_1 (FF)
-  Destination:       lvl_0 (FF)
+  Destination:       lvl_2 (FF)
   Source Clock:      divide_clock/debounce_output rising
   Destination Clock: divide_clock/debounce_output rising
 
-  Data Path: lvl_1 to lvl_0
+  Data Path: lvl_1 to lvl_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            43   0.447   1.553  lvl_1 (lvl_1)
-     LUT3:I1->O           13   0.203   0.933  ds[7]_base[7]_not_equal_6_o5_SW5 (N49)
-     LUT6:I5->O            1   0.205   0.000  Mmux_lvl[3]_lvl[3]_mux_12_OUT11 (lvl[3]_lvl[3]_mux_12_OUT<0>)
-     FDRE:D                    0.102          lvl_0
+     FDRE:C->Q            42   0.447   1.538  lvl_1 (lvl_1)
+     LUT4:I2->O           20   0.203   1.093  GND_1_o_GND_1_o_equal_95_o<3>1 (GND_1_o_GND_1_o_equal_95_o)
+     LUT5:I4->O            1   0.205   0.000  Mmux_lvl[3]_lvl[3]_mux_12_OUT31 (lvl[3]_lvl[3]_mux_12_OUT<2>)
+     FDRE:D                    0.102          lvl_2
     ----------------------------------------
-    Total                      3.443ns (0.957ns logic, 2.486ns route)
-                                       (27.8% logic, 72.2% route)
+    Total                      3.589ns (0.957ns logic, 2.632ns route)
+                                       (26.7% logic, 73.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock '_i000001/segment_clock'
@@ -777,22 +798,22 @@ Offset:              3.634ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 15 / 15
+  Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
-Offset:              3.597ns (Levels of Logic = 1)
-  Source:            JC_2_1 (FF)
-  Destination:       JC<7> (PAD)
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            sound_ouput/sound_counter_15 (FF)
+  Destination:       sound (PAD)
   Source Clock:      clk rising
 
-  Data Path: JC_2_1 to JC<7>
+  Data Path: sound_ouput/sound_counter_15 to sound
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.447   0.579  JC_2_1 (JC_2_1)
-     OBUF:I->O                 2.571          JC_7_OBUF (JC<7>)
+     FDE:C->Q              2   0.447   0.616  sound_ouput/sound_counter_15 (sound_ouput/sound_counter_15)
+     OBUF:I->O                 2.571          sound_OBUF (sound)
     ----------------------------------------
-    Total                      3.597ns (3.018ns logic, 0.579ns route)
-                                       (83.9% logic, 16.1% route)
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
 
 =========================================================================
 
@@ -805,7 +826,7 @@ Clock to Setup on destination clock _i000001/segment_clock
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 _i000001/segment_clock      |    2.190|         |         |         |
-divide_clock/debounce_output|    2.459|         |         |         |
+divide_clock/debounce_output|    2.445|         |         |         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -815,7 +836,8 @@ Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 _i000001/segment_clock      |    1.405|         |         |         |
 clk                         |    4.078|         |         |         |
-divide_clock/debounce_output|    3.256|         |         |         |
+divide_clock/debounce_output|    3.242|         |         |         |
+divide_clock/led_output     |    1.818|         |         |         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock divide_clock/debounce_output
@@ -824,7 +846,7 @@ Clock to Setup on destination clock divide_clock/debounce_output
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 clk                         |    2.833|         |         |         |
-divide_clock/debounce_output|    3.443|         |         |         |
+divide_clock/debounce_output|    3.589|         |         |         |
 divide_clock/led_output     |    1.591|         |         |         |
 master_level_clock          |    2.998|         |         |         |
 ----------------------------+---------+---------+---------+---------+
@@ -834,9 +856,9 @@ Clock to Setup on destination clock divide_clock/led_output
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-clk                         |    3.272|         |         |         |
-divide_clock/debounce_output|    4.804|         |         |         |
-divide_clock/led_output     |    4.107|         |         |         |
+clk                         |    3.339|         |         |         |
+divide_clock/debounce_output|    5.246|         |         |         |
+divide_clock/led_output     |    4.140|         |         |         |
 master_level_clock          |    2.646|         |         |         |
 ----------------------------+---------+---------+---------+---------+
 
@@ -851,14 +873,14 @@ master_level_clock|    3.019|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 21.32 secs
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.99 secs
  
 --> 
 
-Total memory usage is 259152 kilobytes
+Total memory usage is 258868 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  106 (   0 filtered)
+Number of warnings :  107 (   0 filtered)
 Number of infos    :   14 (   0 filtered)
 

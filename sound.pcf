@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.68d on Thu Jun 08 10:50:08 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "speaker" LOCATE = SITE "G11" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "sound_counter_0" BEL "sound_counter_1" BEL
+        "sound_counter_2" BEL "sound_counter_3" BEL "sound_counter_4" BEL
+        "sound_counter_5" BEL "sound_counter_6" BEL "sound_counter_7" BEL
+        "sound_counter_8" BEL "sound_counter_9" BEL "sound_counter_10" BEL
+        "sound_counter_11" BEL "sound_counter_12" BEL "sound_counter_13" BEL
+        "sound_counter_14" BEL "sound_counter_15" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

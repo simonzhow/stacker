@@ -1,3 +1,4 @@
+verilog work "sound.v"
 verilog work "score_main.v"
 verilog work "external_segment.v"
 verilog work "debounce - Copy.v"

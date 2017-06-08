@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.68d on Tue Jun 06 15:53:17 2017
+// Written by: Map P.68d on Thu Jun 08 11:34:51 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -34,6 +34,7 @@ COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
 COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
 COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
 COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "sound" LOCATE = SITE "G11" LEVEL 1;
 COMP "seg<0>" LOCATE = SITE "T17" LEVEL 1;
 COMP "seg<1>" LOCATE = SITE "T18" LEVEL 1;
 COMP "seg<2>" LOCATE = SITE "U17" LEVEL 1;
@@ -42,17 +43,25 @@ COMP "seg<4>" LOCATE = SITE "M14" LEVEL 1;
 COMP "seg<5>" LOCATE = SITE "N14" LEVEL 1;
 COMP "seg<6>" LOCATE = SITE "L14" LEVEL 1;
 COMP "seg<7>" LOCATE = SITE "M13" LEVEL 1;
-TIMEGRP sys_clk_pin = BEL "btnS_ff" BEL "btnS_db" BEL "seg_0" BEL "seg_1" BEL
-        "seg_2" BEL "seg_3" BEL "seg_4" BEL "seg_5" BEL "seg_6" BEL
+TIMEGRP sys_clk_pin = BEL "btnS_ff" BEL "btnS_db" BEL "JC_0" BEL "JC_1" BEL
+        "JC_2" BEL "JC_5" BEL "seg_0" BEL "seg_1" BEL "seg_2" BEL "seg_3" BEL
+        "seg_4" BEL "seg_5" BEL "seg_6" BEL "an_0" BEL "an_1" BEL
         "ds_move_height_0" BEL "ds_move_height_1" BEL "ds_move_height_2" BEL
         "ds_move_height_3" BEL "ds_move_height_4" BEL "ds_move_height_5" BEL
         "ds_move_height_6" BEL "ds_move_height_7" BEL "ds_height_1" BEL
         "ds_height_2" BEL "ds_height_3" BEL "ds_height_4" BEL "ds_height_5"
-        BEL "ds_height_6" BEL "ds_height_7" BEL "an_0" BEL "an_1" BEL "JC_1"
-        BEL "JC_2" BEL "JC_3" BEL "JC_6" BEL "_i000001/segment_counter_14" BEL
-        "_i000001/segment_counter_13" BEL "_i000001/segment_counter_12" BEL
-        "_i000001/segment_counter_11" BEL "_i000001/segment_counter_10" BEL
-        "_i000001/segment_counter_9" BEL "_i000001/segment_counter_8" BEL
+        BEL "ds_height_6" BEL "ds_height_7" BEL "sound_ouput/sound_counter_0"
+        BEL "sound_ouput/sound_counter_1" BEL "sound_ouput/sound_counter_2"
+        BEL "sound_ouput/sound_counter_3" BEL "sound_ouput/sound_counter_4"
+        BEL "sound_ouput/sound_counter_5" BEL "sound_ouput/sound_counter_6"
+        BEL "sound_ouput/sound_counter_7" BEL "sound_ouput/sound_counter_8"
+        BEL "sound_ouput/sound_counter_9" BEL "sound_ouput/sound_counter_10"
+        BEL "sound_ouput/sound_counter_11" BEL "sound_ouput/sound_counter_12"
+        BEL "sound_ouput/sound_counter_13" BEL "sound_ouput/sound_counter_14"
+        BEL "sound_ouput/sound_counter_15" BEL "_i000001/segment_counter_14"
+        BEL "_i000001/segment_counter_13" BEL "_i000001/segment_counter_12"
+        BEL "_i000001/segment_counter_11" BEL "_i000001/segment_counter_10"
+        BEL "_i000001/segment_counter_9" BEL "_i000001/segment_counter_8" BEL
         "_i000001/segment_counter_7" BEL "_i000001/segment_counter_6" BEL
         "_i000001/segment_counter_5" BEL "_i000001/segment_counter_4" BEL
         "_i000001/segment_counter_3" BEL "divide_clock/lvl_2_output" BEL

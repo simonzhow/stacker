@@ -165,7 +165,7 @@ NET "JC<6>"          LOC = "J6"  | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin nam
 NET "JC<7>"          LOC = "F2"  | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L48P_M3BA0,                     Sch name = JC10
 
 ##JD, LX16 Die only
-#NET "JD<0>"          LOC = "G11" | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L40P,                           Sch name = JD1
+NET "sound"          LOC = "G11" | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L40P,                           Sch name = JD1
 #NET "Uart1_Tx"       LOC = "F10" | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L40N,                           Sch name = JD2
 #NET "Uart1_Rx"       LOC = "F11" | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L42P,                           Sch name = JD3
 #NET "Uart1_Tx"       LOC = "E11" | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L42N,                           Sch name = JD4
